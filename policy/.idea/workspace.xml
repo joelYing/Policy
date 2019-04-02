@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1503c8d9-7470-40a5-9162-9ab8681eda2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/Kan360Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/QuartzService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetHtml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/KanId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/allUrl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/mUrl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/tvUrl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/updateUrl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/ActorInfos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/PlayType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Vedio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioInfos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioMovieSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioTvSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/mapper/VedioMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/ActorInfoTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/CircleTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/VedioInfoTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/ActorInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/Crawls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/DbConnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/IdPeople.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/ReadUrlSave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/ReadUrlUpdate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfoSave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/videoid/allUrl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/web/VedioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/crud.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kan.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/policy.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spider/kan360/Kan360ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spider/Policy/PolicyApplicationTests.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="policy" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="policy" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="policy" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="policy: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="2475b2fe-23a7-4fa8-b158-f49596e66185" />
+    </checked>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1986078230">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="2" />
+          <entry key="project.open.time.48" value="2" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="domain1" value="1" />
+          <entry key="java" value="456" />
+          <entry key="kan_people_copy" value="1" />
+          <entry key="md" value="8" />
+          <entry key="properties" value="8" />
+          <entry key="sql" value="19" />
+          <entry key="txt" value="67" />
+          <entry key="xml" value="15" />
+          <entry key="yml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="Database Element" value="1" />
+          <entry key="JAVA" value="456" />
+          <entry key="Markdown" value="8" />
+          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="Properties" value="8" />
+          <entry key="SQL" value="17" />
+          <entry key="Scratch" value="2" />
+          <entry key="XML" value="15" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="domain1" value="9" />
+          <entry key="dummy" value="77" />
+          <entry key="java" value="29690" />
+          <entry key="md" value="843" />
+          <entry key="properties" value="93" />
+          <entry key="sql" value="559" />
+          <entry key="txt" value="35" />
+          <entry key="xml" value="26" />
+          <entry key="yml" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="29674" />
+          <entry key="Markdown" value="843" />
+          <entry key="PLAIN_TEXT" value="121" />
+          <entry key="Properties" value="93" />
+          <entry key="RegExp" value="11" />
+          <entry key="SQL" value="564" />
+          <entry key="XML" value="26" />
+          <entry key="YAML" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+    <session id="-1407303935">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="94" />
+          <entry key="properties" value="2" />
+          <entry key="sql" value="7" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="94" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="2" />
+          <entry key="SQL" value="6" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="18" />
+          <entry key="java" value="1111" />
+          <entry key="properties" value="12" />
+          <entry key="sql" value="2" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1110" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Properties" value="12" />
+          <entry key="SQL" value="3" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-470525300">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="27" />
+          <entry key="properties" value="1" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="27" />
+          <entry key="Properties" value="1" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="6" />
+          <entry key="java" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="PLAIN_TEXT" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="121133049">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/policy.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>style=&quot;display:none;&quot;&gt;&lt;span&gt;简介 ：&lt;/span&gt;</find>
+      <find>&lt;a data-num=\&quot;</find>
+      <find>柳岩</find>
+      <find>class='w-star-title' href=''&gt;</find>
+      <find />
+      <find>人物</find>
+      <find>https://www.360kan.com/tv/QLJvba7mSmLmOX.html</find>
+      <find>储毅</find>
+      <find>https://www.360kan.com/tv/PrluaH7kSz0uMH.html</find>
+      <find>https://www.360kan.com/tv/QbZubKamSGTrMn.html</find>
+      <find>https://www.360kan.com/tv/PLJqc07kTG0qNX.html</find>
+      <find>https://www.360kan.com/tv/QLRpcX7kSWXnN3.html</find>
+      <find>selectVedioIds</find>
+      <find>http://v.youku.com/v_show/id_</find>
+      <find>https://www.360kan.com/tv/Q4pqcX7kSGLmOX.html</find>
+      <find>https://www.360kan.com/tv/Q4Fpan7kRWToOX.html</find>
+      <find>https://www.360kan.com/tv/PbZxaKKoSWLtMX.html</find>
+      <find>VedioThreadPool</find>
+      <find>https://www.360kan.com/m/gaXrY0D2SHj5TB.html</find>
+      <find>https://www.360kan.com/m/hqvnYhH4RXX0TR.html</find>
+      <find>https://www.360kan.com/m/gKPpZBH5Q0X5SR.html</find>
+      <find>ok</find>
+      <find>https://www.360kan.com/m/gKLpaUPARnn8UR.html</find>
+      <find>https://www.360kan.com/m/faXlaRH2Q0HASB.html</find>
+      <find>https://www.360kan.com/tv/QbpsaqDaRG0tOX.html</find>
+      <find>https://www.360kan.com/m/fanlZUf8R0b6SB.html</find>
+      <find>getIdList</find>
+      <find>c-snet.com</find>
+      <find>qilianshan.com.cn</find>
+      <find>rmb9.com</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhan/DomainSave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhan/AiZhan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhan/GetDomainHtml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhantest/GetDomainHtml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhantest/AiZhan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/QuartzService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/config/PageHelperConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/mapper/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/web/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/crud.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Policy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/DbConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetHtml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/KanId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/GerSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/Circle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/VedioService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/VedioServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/mapper/VedioMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/web/VedioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfoSave.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/kan.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/Kan360Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/KanId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/config/PageHelperConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/VedioInfos.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/mapper/PolicyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/DbConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files/maven" />
+        <option name="userSettingsFile" value="C:\Program Files\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-12" />
+    <option name="width" value="1299" />
+    <option name="height" value="1411" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Ali-Check</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AlibabaMethodTooLong</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="bases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="threadtool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="xxx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="policy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554199762570" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.13178295" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\policy\kan360\src\main\java\com\spider\kan360\utils" />
+      <recent name="D:\mygit\kan360\src\main\java\com\spider\kan360\aizhan" />
+      <recent name="D:\mygit\kan360\src\main\java\com\spider\kan360" />
+      <recent name="D:\mygit\kan360\src\main\java\com\spider\kan360\bases" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spider.kan360.aizhan" />
+      <recent name="com.spider.kan360.utils" />
+      <recent name="com.spider.kan360.threadtool" />
+      <recent name="com.spider.kan360.entity" />
+      <recent name="com.spider.kan360.videoid" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mygit\kan360" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PolicyApplication">
+    <configuration name="AiZhan (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhan.AiZhan" />
+      <module name="policy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spider.kan360.aizhan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AiZhan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhantest.AiZhan" />
+      <module name="policy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spider.kan360.aizhantest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GerSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.utils.GerSource" />
+      <module name="policy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spider.kan360.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhantest.GetProxy" />
+      <module name="policy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spider.kan360.aizhantest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kan360Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="policy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spider.kan360.Kan360Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolicyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="policy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spider.policy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spider.policy.PolicyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Kan360Application" />
+      <item itemvalue="Application.AiZhan" />
+      <item itemvalue="Application.GetProxy" />
+      <item itemvalue="Application.AiZhan (1)" />
+      <item itemvalue="Application.GerSource" />
+      <item itemvalue="Spring Boot.PolicyApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PolicyApplication" />
+        <item itemvalue="Application.GerSource" />
+        <item itemvalue="Application.AiZhan" />
+        <item itemvalue="Application.AiZhan (1)" />
+        <item itemvalue="Application.GetProxy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1503c8d9-7470-40a5-9162-9ab8681eda2a" name="Default Changelist" comment="" />
+      <created>1548826512356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548826512356</updated>
+      <workItem from="1548826517240" duration="9284000" />
+      <workItem from="1548898806572" duration="24684000" />
+      <workItem from="1548985505734" duration="21855000" />
+      <workItem from="1549071626666" duration="23991000" />
+      <workItem from="1550021806012" duration="26265000" />
+      <workItem from="1550108847479" duration="61368000" />
+      <workItem from="1550454402509" duration="69853000" />
+      <workItem from="1550713446533" duration="40258000" />
+      <workItem from="1551059049739" duration="123884000" />
+      <workItem from="1551663416653" duration="27466000" />
+      <workItem from="1551750523117" duration="95175000" />
+      <workItem from="1552268498715" duration="79836000" />
+      <workItem from="1552873799284" duration="2190000" />
+      <workItem from="1552965174015" duration="21961000" />
+      <workItem from="1554187122604" duration="11022000" />
+      <workItem from="1554198899083" duration="114000" />
+      <workItem from="1554199045258" duration="15000" />
+      <workItem from="1554199207215" duration="616000" />
+      <workItem from="1554199950276" duration="21000" />
+    </task>
+    <task id="LOCAL-00001" summary="360kan">
+      <created>1550818705961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550818705962</updated>
+    </task>
+    <task id="LOCAL-00002" summary="360kan">
+      <created>1551149902095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551149902095</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="639858000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="0" width="1285" height="1396" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26285714" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995905" weight="0.24313408" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34565917" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32955465" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32955465" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32955465" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004095" side_tool="true" weight="0.48016194" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.27948305" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32955465" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32955465" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955465" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.0999181" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32978722" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="360kan" />
+    <option name="LAST_COMMIT_MESSAGE" value="360kan" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Category.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/ActorInfos.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/PlayType.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6031d3b6-1aff-4180-ad5f-fa144ba46648/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetHtml.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/KanId.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/Circle.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/QuartzService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/config/PageHelperConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/Kan360Application.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/xxx/CategoryMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/xxx/CategoryController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioTvSource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Vedio.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioInfos.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Policy.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/crud.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfoSave.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/web/PolicyController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/GerSource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/DbConnect.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/mapper/PolicyMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/CircleTask.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/KanId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/config/PageHelperConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/VedioInfos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/mapper/PolicyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/DbConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spider/Policy/PolicyApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/policy.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|policy</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.13178295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>java1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.13178295" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
