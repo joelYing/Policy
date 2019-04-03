@@ -2,44 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1503c8d9-7470-40a5-9162-9ab8681eda2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/source.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Rule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/SaveSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bug.md" beforeDir="false" afterPath="$PROJECT_DIR$/bug.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/policy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/Kan360Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/QuartzService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetHtml.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/KanId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/allUrl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/mUrl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/tvUrl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/updateUrl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/ActorInfos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/PlayType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Vedio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioInfos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioMovieSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/VedioTvSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/mapper/VedioMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/ActorInfoTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/CircleTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/VedioInfoTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/ActorInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/Crawls.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/DbConnect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/IdPeople.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/ReadUrlSave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/ReadUrlUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfoSave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/videoid/allUrl.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/kan360/web/VedioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/crud.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/kan.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/policy.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spider/kan360/Kan360ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spider/Policy/PolicyApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -252,14 +230,60 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1551369474">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="16" />
+          <entry key="md" value="1" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="16" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="class" value="5" />
+          <entry key="java" value="2019" />
+          <entry key="md" value="9" />
+          <entry key="txt" value="36" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="2019" />
+          <entry key="Markdown" value="9" />
+          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -268,71 +292,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/policy.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -343,8 +315,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="282">
+              <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -352,14 +324,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="603">
+              <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5789#5790#0" expanded="true" />
+                <element signature="e#5820#5821#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="86" column="57" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/source.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -375,11 +367,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>style=&quot;display:none;&quot;&gt;&lt;span&gt;简介 ：&lt;/span&gt;</find>
-      <find>&lt;a data-num=\&quot;</find>
-      <find>柳岩</find>
-      <find>class='w-star-title' href=''&gt;</find>
-      <find />
       <find>人物</find>
       <find>https://www.360kan.com/tv/QLJvba7mSmLmOX.html</find>
       <find>储毅</find>
@@ -405,21 +392,20 @@
       <find>c-snet.com</find>
       <find>qilianshan.com.cn</find>
       <find>rmb9.com</find>
+      <find>xxfb</find>
+      <find>商务部关于印发《2019年度甘草及其制品出口配额第一次招标中标企业名单及其中标额度表》的通知</find>
+      <find>private static final int MAX_FOLLOW_UPS</find>
+      <find>&amp;ldquo;</find>
+      <find>&lt;div class=\&quot;artLabel\&quot;&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhan/DomainSave.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhan/AiZhan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhan/GetDomainHtml.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhantest/GetDomainHtml.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/aizhantest/AiZhan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/QuartzService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/config/PageHelperConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/mapper/CategoryMapper.java" />
@@ -443,7 +429,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/kan360/utils/VedioInfoSave.java" />
         <option value="$PROJECT_DIR$/src/main/resources/kan.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/Kan360Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/KanId.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/config/PageHelperConfig.java" />
@@ -454,9 +439,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/DbConnect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java" />
@@ -464,6 +446,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Rule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/SaveSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/source.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bug.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
       </list>
     </option>
   </component>
@@ -486,10 +478,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="width" value="1299" />
-    <option name="height" value="1411" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1295" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -523,6 +515,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -685,7 +678,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -697,17 +689,17 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554199762570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554288706891" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.13178295" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.213732" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -728,6 +720,11 @@
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -738,14 +735,15 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.095993325" />
   </component>
-  <component name="RunManager" selected="Spring Boot.PolicyApplication">
-    <configuration name="AiZhan (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhan.AiZhan" />
+  <component name="RunManager" selected="Application.GerSource (1)">
+    <configuration name="AiZhan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhantest.AiZhan" />
       <module name="policy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spider.kan360.aizhan.*" />
+          <option name="PATTERN" value="com.spider.kan360.aizhantest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -753,12 +751,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AiZhan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhantest.AiZhan" />
+    <configuration name="GerSource (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.policy.utils.GerSource" />
       <module name="policy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spider.kan360.aizhantest.*" />
+          <option name="PATTERN" value="com.spider.policy.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -779,22 +777,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spider.kan360.aizhantest.GetProxy" />
+    <configuration name="SaveSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spider.policy.utils.SaveSource" />
       <module name="policy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spider.kan360.aizhantest.*" />
+          <option name="PATTERN" value="com.spider.policy.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kan360Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="policy" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spider.kan360.Kan360Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -813,20 +804,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.Kan360Application" />
       <item itemvalue="Application.AiZhan" />
-      <item itemvalue="Application.GetProxy" />
-      <item itemvalue="Application.AiZhan (1)" />
       <item itemvalue="Application.GerSource" />
       <item itemvalue="Spring Boot.PolicyApplication" />
+      <item itemvalue="Application.GerSource (1)" />
+      <item itemvalue="Application.SaveSource" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GerSource (1)" />
         <item itemvalue="Spring Boot.PolicyApplication" />
+        <item itemvalue="Application.SaveSource" />
         <item itemvalue="Application.GerSource" />
         <item itemvalue="Application.AiZhan" />
-        <item itemvalue="Application.AiZhan (1)" />
-        <item itemvalue="Application.GetProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -859,6 +849,8 @@
       <workItem from="1554199045258" duration="15000" />
       <workItem from="1554199207215" duration="616000" />
       <workItem from="1554199950276" duration="21000" />
+      <workItem from="1554200801071" duration="854000" />
+      <workItem from="1554256004560" duration="24096000" />
     </task>
     <task id="LOCAL-00001" summary="360kan">
       <created>1550818705961</created>
@@ -878,7 +870,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="639858000" />
+    <option name="totallyTimeSpent" value="664808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -890,9 +882,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1285" height="1396" extended-state="0" />
+    <frame x="-8" y="-8" width="2549" height="1401" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26285714" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14543994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -902,19 +894,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995905" weight="0.24313408" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995905" visible="true" weight="0.40434083" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34565917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32955465" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32955465" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32877815" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32877815" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32955465" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004095" side_tool="true" weight="0.48016194" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.27948305" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.27854252" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32955465" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32955465" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955465" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.5473684" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -935,20 +928,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="360kan" />
     <option name="LAST_COMMIT_MESSAGE" value="360kan" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/Category.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/ActorInfos.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/entity/PlayType.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6031d3b6-1aff-4180-ad5f-fa144ba46648/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetHtml.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/KanId.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/GetPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/bases/Circle.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/QuartzService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/config/PageHelperConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/Kan360Application.java" />
@@ -968,27 +954,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/service/PolicyServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/kan360/threadtool/CircleTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/KanId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/config/PageHelperConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1017,9 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,40 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,16 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1149,16 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1169,12 +1077,165 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/SaveSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/maven/repo/com/squareup/okhttp3/okhttp/3.12.1/okhttp-3.12.1.jar!/okhttp3/internal/http/RetryAndFollowUpInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="125" column="35" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/maven/repo/com/squareup/okhttp3/okhttp/3.12.1/okhttp-3.12.1.jar!/okhttp3/OkHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5276">
+          <caret line="259" lean-forward="true" selection-start-line="259" selection-end-line="259" />
+          <folding>
+            <element signature="e#8291#8292#0" expanded="true" />
+            <element signature="e#8356#8357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/KanId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bug.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="678">
+            <caret line="102" column="67" lean-forward="true" selection-start-line="102" selection-start-column="67" selection-end-line="102" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="86" column="57" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/source.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GerSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5789#5790#0" expanded="true" />
+            <element signature="e#5820#5821#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1188,7 +1249,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.213732" />
               </list>
             </option>
           </splitter-proportions>
@@ -1200,7 +1261,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.213732" />
               </list>
             </option>
           </splitter-proportions>
@@ -1220,11 +1281,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>java11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.213732" />
               </list>
             </option>
           </splitter-proportions>
@@ -1260,7 +1321,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.13178295" />
+                <option value="0.213732" />
               </list>
             </option>
           </splitter-proportions>

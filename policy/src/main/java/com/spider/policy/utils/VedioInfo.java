@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
  **/
 
 public class VedioInfo {
-    HashSet<String> selectSource = VedioInfoSave.selectSource();
+//    HashSet<String> selectSource = VedioInfoSave.selectSource();
 
     /**
      * 采集视频的基本信息以及视频对应的播放链接，并存入数据库

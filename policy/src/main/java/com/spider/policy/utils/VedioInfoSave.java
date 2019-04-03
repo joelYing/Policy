@@ -183,26 +183,23 @@ public class VedioInfoSave {
         return names;
     }
 
-    /**
-     * 从原来的 kan_allvedio 中提取演员名称，重新搜索，保存数据
-     */
-    public static void insertPeople(String table, String field, int vedioId, String actorname) {
+    public static void insertSource(String name, String url) {
         try {
             Connection connection = dbConnect.getConnect();
             PreparedStatement pst;
 
-            String insertSql = String.format("INSERT INTO %s (`vedio_id`, %s) VALUES (?,?)", table, field);
+            String insertSql = "INSERT INTO source (`source_url`, source_name) VALUES (?,?)";
             pst = connection.prepareStatement(insertSql);
 
-            String selectSql = String.format("select %s from %s where %s=?", field, table, field);
+            String selectSql = "select `source_url` from source where source_url=?";
             PreparedStatement pst2 = connection.prepareStatement(selectSql);
-            pst2.setString(1, actorname);
+            pst2.setString(1, url);
             ResultSet result = pst2.executeQuery();
 
             // 返回结果集
             if (!result.next()) {
-                pst.setInt(1, vedioId);
-                pst.setString(2, actorname);
+                pst.setString(1, url);
+                pst.setString(2, name);
 
                 pst.executeUpdate();
                 System.out.println("==");
@@ -217,21 +214,22 @@ public class VedioInfoSave {
         }
     }
 
-    /**
-     * 查询电视剧，返回HashSet
-     */
-    public static HashSet<String> selectSource() {
-        HashSet<String> sourceUrl = new HashSet<>();
+    public static ArrayList<ArrayList<String>> selectSource() {
+        ArrayList<ArrayList<String>> sourceUrl = new ArrayList<>();
         try {
             Connection connection = dbConnect.getConnect();
             PreparedStatement pst;
 
-            String querySql = "select `source_url` from `source`";
+            String querySql = "select `source_url`, `source_name` from `source`";
             pst = connection.prepareStatement(querySql);
             ResultSet result = pst.executeQuery();
             while (result.next()) {
-                String res = result.getString(1);
-                sourceUrl.add(res);
+                ArrayList<String> urlname = new ArrayList<>();
+                String sourceurl = result.getString(1);
+                String sourcename = result.getString(2);
+                urlname.add(sourceurl);
+                urlname.add(sourcename);
+                sourceUrl.add(urlname);
             }
             pst.close();
             connection.close();
