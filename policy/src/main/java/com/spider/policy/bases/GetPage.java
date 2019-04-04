@@ -29,4 +29,36 @@ public class GetPage {
 
         return page;
     }
+
+    public static int getNdrcPage(String response) {
+        String page = "1";
+        String pages = "createPageHTML\\((\\d+), \\d+, \"index\", \"html\"\\);";
+        Pattern pattern = Pattern.compile(pages);
+        Matcher matcher = pattern.matcher(response);
+
+        // 正则提取基本视频信息
+        while (matcher.find()) {
+            page = matcher.group(1);
+        }
+        // 总页数
+        System.out.println(page);
+
+        return Integer.parseInt(page);
+    }
+
+    public static int getMohrssPage(String response) {
+        String page = "1";
+        String pages = "var countPage = (\\d+)//共多少页";
+        Pattern pattern = Pattern.compile(pages);
+        Matcher matcher = pattern.matcher(response);
+
+        // 正则提取基本视频信息
+        while (matcher.find()) {
+            page = matcher.group(1);
+        }
+        // 总页数
+        System.out.println(page);
+
+        return Integer.parseInt(page);
+    }
 }
