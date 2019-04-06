@@ -57,48 +57,49 @@ public class GerSource {
 //        if("中华人民共和国人力资源和社会保障部".equals(sourceName)) {
 //            mohrss(policy, sourceUrl, sourceName, sourceRule);
 //        }
-        if("中华人民共和国交通运输部".equals(sourceName)) {
-            sourceRule = "";
-        }
-        if("中华人民共和国工业和信息化部".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("中华人民共和国财政部".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("中华人民共和国审计署".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("国务院国有资产监督管理委员会".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("中华人民共和国海关总署".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("国家机关事务管理局".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("国务院港澳事务办公室".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("中国证券监督管理委员会".equals(sourceName)) {
-            sourceRule = "a";
-        }
+//        if("中华人民共和国交通运输部".equals(sourceName)) {
+//            sourceRule = "网址无效";
+//        }
+//        if("中华人民共和国工业和信息化部".equals(sourceName)) {
+//            // 未结束
+//            miit(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("中华人民共和国财政部".equals(sourceName)) {
+//            mof(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("中华人民共和国审计署".equals(sourceName)) {
+//            audit(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("国务院国有资产监督管理委员会".equals(sourceName)) {
+//            sasac(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("中华人民共和国海关总署".equals(sourceName)) {
+//            customs(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("国家机关事务管理局".equals(sourceName)) {
+//            ggj(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("国务院港澳事务办公室".equals(sourceName)) {
+//            hmo(policy, sourceUrl, sourceName, sourceRule);
+//        }
+//        if("中国证券监督管理委员会".equals(sourceName)) {
+//            csrc(policy, sourceUrl, sourceName, sourceRule);
+//        }
         if("中国银行保险监督管理委员会".equals(sourceName)) {
-            sourceRule = "a";
+            cbrc(policy, sourceUrl, sourceName, sourceRule);
         }
-        if("中国民用航空局".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("国家铁路局".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("国家邮政局".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("中华人民共和国交通运输部".equals(sourceName)) {
-            sourceRule = "a";
-        }
+//        if("中国民用航空局".equals(sourceName)) {
+//            sourceRule = "a";
+//        }
+//        if("国家铁路局".equals(sourceName)) {
+//            sourceRule = "a";
+//        }
+//        if("国家邮政局".equals(sourceName)) {
+//            sourceRule = "a";
+//        }
+//        if("中华人民共和国交通运输部".equals(sourceName)) {
+//            sourceRule = "a";
+//        }
     }
 
     public static void mofcom(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
@@ -456,6 +457,376 @@ public class GerSource {
                 }
             }
         }
+    }
+
+    // 限制访问一定时间内的次数 七页 112页之后是2011年的部分内容，未采集
+    public static void miit(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        int pages = 396;
+        String content = "<div class=\"ccontent center\".*?>([\\s\\S]*?)</div>";
+        for (int i = 1; i <= pages; i++) {
+            if (i > 125) {
+                System.out.println("this is : " + i);
+                String realHtml;
+                realHtml = GetHtml.getHtml("http://www.miit.gov.cn/gdnps/searchIndex.jsp?" +
+                        "params=%257B%2522goPage%2522%253A" + String.format("%s", i) + "%252C%2522orderBy%2522%253A%255B%257B%2522" +
+                        "orderBy%2522%253A%2522publishTime%2522%252C%2522reverse%2522%253" +
+                        "Atrue%257D%252C%257B%2522orderBy%2522%253A%2522orderTime%2522%252C%2522reverse%2522%253" +
+                        "Atrue%257D%255D%252C%2522pageSize%2522%253A10%252C%2522" +
+                        "queryParam%2522%253A%255B%257B%257D%252C%257B%257D%252C%257B%2522" +
+                        "shortName%2522%253A%2522fbjg%2522%252C%2522" +
+                        "value%2522%253A%2522%252F1%252F29%252F1146295%252F1652858%252F1652930%2522%257D%255D%257D");
+                Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+                while (matcher.find()) {
+//                    if (Integer.parseInt(matcher.group(7)) > limitYear) {
+                    if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                        String policyUrl = sourceUrl + String.format("n%s/n%s/n%s/n%s/c%s/content.html",
+//                                matcher.group(1), matcher.group(2), matcher.group(3), matcher.group(4), matcher.group(5));
+                                  matcher.group(6), matcher.group(7), matcher.group(8), matcher.group(9), matcher.group(1));
+
+                        System.out.println(policyUrl);
+//                        System.out.println(matcher.group(6));
+                        System.out.println(matcher.group(2));
+
+                        policy.setPolicyUrl(policyUrl);
+                        policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;|(\\\\u\\w{4})", ""));
+                        policy.setPolicySource(sourceName);
+                        policy.setPolicyKeywords("");
+                        policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                        policy.setPolicyContent("");
+
+                        try {
+                            String policyHtml = GetHtml.getHtml(policyUrl);
+                            Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                            while (matcher1.find()) {
+                                String text = matcher1.group(1).replaceAll("<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                                policy.setPolicyContent(text.trim());
+                            }
+                            VedioInfoSave.insert(policy);
+                        } catch (Exception e) {
+                            System.out.println("Sorry, Page Not Found");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public static void mof(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<div class=\"*TRS_Editor\"*>([\\s\\S]*?)</div>";
+        int pages = 23;
+        for (int i = 1; i <= pages; i++) {
+            String realHtml;
+            if (i == 1) {
+                realHtml = GetHtml.getHtml3("http://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/index.htm");
+            } else {
+                realHtml = GetHtml.getHtml3(String.format("http://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/index_%s.htm", i - 1));
+            }
+            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+            while (matcher.find()) {
+                if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                    String policyUrl = matcher.group(1).replace("./", "http://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/");
+                    System.out.println(policyUrl);
+                    System.out.println(matcher.group(2));
+
+                    policy.setPolicyUrl(policyUrl);
+                    policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;", ""));
+                    policy.setPolicySource(sourceName);
+                    policy.setPolicyKeywords("");
+                    policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                    policy.setPolicyContent("");
+                    String policyHtml = GetHtml.getHtml3(policyUrl);
+                    Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                    while (matcher1.find()) {
+                        String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                        policy.setPolicyContent(text.trim());
+                    }
+                    VedioInfoSave.insert(policy);
+                }
+            }
+        }
+    }
+
+    public static void audit(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        int pages = 3;
+        for (int i = 1; i <= pages; i++) {
+            System.out.println("this is : " + i);
+            String realHtml;
+            realHtml = GetHtml.getHtml("http://xinxi.audit.gov.cn:8888/gdnps/searchIndex.jsp?" +
+                    "params=%257B%2522goPage%2522%253A" + String.format("%s", i) + "%252C%2522orderBy" +
+                    "%2522%253A%255B%257B%2522orderBy%2522%253A%2522orderTime%2522%252C%2522reverse%2522%253" +
+                    "Atrue%257D%255D%252C%2522pageSize%2522%253A20%252C%2522queryParam%2522%253A%255B%257B%2522" +
+                    "shortName%2522%253A%2522ztfl%2522%252C%2522value%2522%253A%2522" +
+                    "subcat%252F02%2522%257D%252C%257B%257D%252C%257B%257D%255D%257D" +
+                    "&callback=jQuery191023868963470807913_1554537117720&_=1554537117748");
+            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+            while (matcher.find()) {
+                if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                    String policyUrl = String.format("http://xinxi.audit.gov.cn:8888/gdnps/content.jsp?id=%s", matcher.group(1));
+                    System.out.println(policyUrl);
+                    System.out.println(matcher.group(2));
+
+                    policy.setPolicyUrl(policyUrl);
+                    policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;|(\\\\u\\w{4})", ""));
+                    policy.setPolicySource(sourceName);
+                    policy.setPolicyKeywords("");
+                    policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                    String text = matcher.group(6).replace("\n", "")
+                            .replaceAll("<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                    policy.setPolicyContent(text);
+                    VedioInfoSave.insert(policy);
+                }
+            }
+        }
+    }
+
+    public static void sasac(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<!-- 媒资管理系统专用-->([\\s\\S]*?)<!--二维码生成专用 -->";
+        int pages = 13;
+        for (int i = 1; i <= pages; i++) {
+            String realHtml;
+            if (i == 1) {
+                realHtml = GetHtml.getHtml(sourceUrl + "n2588035/n2588320/n2588335/index.html");
+            } else {
+                realHtml = GetHtml.getHtml(sourceUrl + String.format("n2588035/n2588320/n2588335/index_2603340_%s.html", i - 1));
+            }
+            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+            while (matcher.find()) {
+                if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                    String policyUrl = sourceUrl + matcher.group(1);
+                    System.out.println(policyUrl);
+                    System.out.println(matcher.group(2));
+
+                    policy.setPolicyUrl(policyUrl);
+                    policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;", ""));
+                    policy.setPolicySource(sourceName);
+                    policy.setPolicyKeywords("");
+                    policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                    policy.setPolicyContent("");
+                    String policyHtml = GetHtml.getHtml(policyUrl);
+                    Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                    while (matcher1.find()) {
+                        String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                        policy.setPolicyContent(text.trim());
+                    }
+                    VedioInfoSave.insert(policy);
+                }
+            }
+        }
+    }
+
+    public static void customs(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<div class=\"easysite-news-content\">([\\s\\S]*?)</div>";
+        String[] mohrsss = {"302267", "302268", "302269"};
+        for(String tag : mohrsss) {
+            int pages = GetPage.getCustomsPage(GetHtml.getHtml(String.format("http://www.customs.gov.cn/customs/302249/302266/%s/index.html", tag)));
+            if ("302267".equals(tag)) {
+                pages = 115;
+            }
+            for (int i = 1; i <= pages; i++) {
+                String realHtml;
+                if ("302267".equals(tag)) {
+                    realHtml = GetHtml.getHtml(String.format("http://www.customs.gov.cn/customs/302249/302266/302267/2011fa33-%s.html", i));
+                } else if("302268".equals(tag)) {
+                    realHtml = GetHtml.getHtml("http://www.customs.gov.cn/customs/302249/302266/302268/index.html");
+                } else {
+                    realHtml = GetHtml.getHtml(String.format("http://www.customs.gov.cn/eportal/ui?pageId=302269" +
+                            "&currentPage=%s&moduleId=fbabca72040440eeae48509739453d32", i));
+                }
+                Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+                while (matcher.find()) {
+                    if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                        String policyUrl = "http://www.customs.gov.cn" + matcher.group(1);
+                        System.out.println(policyUrl);
+                        System.out.println(matcher.group(2));
+
+                        policy.setPolicyUrl(policyUrl);
+                        policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;", ""));
+                        policy.setPolicySource(sourceName);
+                        policy.setPolicyKeywords("");
+                        policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                        policy.setPolicyContent("");
+                        try {
+                            String policyHtml = GetHtml.getHtml(policyUrl);
+                            Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                            while (matcher1.find()) {
+                                String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                                policy.setPolicyContent(text.trim());
+                            }
+                            VedioInfoSave.insert(policy);
+                        } catch (Exception e) {
+                            System.out.println("multichoice");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public static void ggj(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<div class=\"conbox2 boxcenter\">([\\s\\S]*?)</div>";
+        int pages = GetPage.getGgjPage(GetHtml.getHtml("http://www.ggj.gov.cn/zcfg/fgxwj/"));
+        for (int i = 1; i <= pages; i++) {
+            String realHtml;
+            if (i == 1) {
+                realHtml = GetHtml.getHtml("http://www.ggj.gov.cn/zcfg/fgxwj/index.htm");
+            } else {
+                realHtml = GetHtml.getHtml(String.format("http://www.ggj.gov.cn/zcfg/fgxwj/index_%s.htm", i - 1));
+            }
+            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+            while (matcher.find()) {
+                if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                    String policyUrl = "http://www.ggj.gov.cn/zcfg/fgxwj/" + matcher.group(1);
+                    System.out.println(policyUrl);
+                    System.out.println(matcher.group(2));
+
+                    policy.setPolicyUrl(policyUrl);
+                    policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;", ""));
+                    policy.setPolicySource(sourceName);
+                    policy.setPolicyKeywords("");
+                    policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                    policy.setPolicyContent("");
+
+                    String policyHtml = GetHtml.getHtml(policyUrl);
+                    Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                    while (matcher1.find()) {
+                        String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                        policy.setPolicyContent(text.trim());
+                    }
+                    VedioInfoSave.insert(policy);
+                }
+            }
+        }
+    }
+
+    public static void hmo(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<!--FILTEREDITORCSS=\"TRUE\"-->([\\s\\S]*?)<div class=\"shareCon\">";
+        String[] mohrsss = {"zcfg_new/xf/", "zcfg_new/jbf/flwj/xg/", "zcfg_new/jbf/flwj/am/",
+                "zcfg_new/gafg/sfxz/", "zcfg_new/gafg/gfxwj/"};
+        for(String tag : mohrsss) {
+            int pages = GetPage.getMohrssPage(GetHtml.getHtml(sourceUrl + tag));
+            for (int i = 1; i <= pages; i++) {
+                String realHtml;
+                if (i == 1) {
+                    realHtml = GetHtml.getHtml(sourceUrl + tag + "index.html");
+                } else {
+                    realHtml = GetHtml.getHtml(sourceUrl + tag + String.format("index_%s.html", i - 1));
+                }
+                Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+                while (matcher.find()) {
+                    if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                        String policyUrl = sourceUrl + tag + matcher.group(1);
+                        System.out.println(policyUrl);
+                        System.out.println(matcher.group(2));
+                        policy.setPolicyUrl(policyUrl);
+                        policy.setPolicyTitle(matcher.group(2));
+                        policy.setPolicySource(sourceName);
+                        policy.setPolicyKeywords("");
+                        policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                        policy.setPolicyContent("");
+
+                        String policyHtml = GetHtml.getHtml(policyUrl);
+                        Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                        while (matcher1.find()) {
+                            String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                            policy.setPolicyContent(text.trim());
+                        }
+                        VedioInfoSave.insert(policy);
+                    }
+                }
+            }
+        }
+    }
+
+    public static void csrc(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<div class=\"content\">([\\s\\S]*?)<script language=\"javascript\">";
+        String realSourceUrl = "http://www.csrc.gov.cn/pub/newsite/flb/flfg/";
+        String[] mohrsss = {
+                "xzfg_8248/", "bmgz/zhl/", "bmgz/fxl/", "bmgz/ssl/", "bmgz/scjy/", "bmgz/zjgs/", "bmgz/jjl/",
+                "bmgz/qhl/", "bmgf/zh/jgzz/", "bmgf/zh/lf/", "bmgf/zh/xzxk/", "bmgf/zh/jcth/", "bmgf/zh/dcycf/",
+                "bmgf/zh/gfxwjfxq/"
+        };
+        for(String tag : mohrsss) {
+            int pages = GetPage.getMohrssPage(GetHtml.getHtml(realSourceUrl + tag));
+            for (int i = 1; i <= pages; i++) {
+                String realHtml;
+                if (i == 1) {
+                    realHtml = GetHtml.getHtml(realSourceUrl + tag + "index.html");
+                } else {
+                    realHtml = GetHtml.getHtml(realSourceUrl + tag + String.format("index_%s.html", i - 1));
+                }
+                Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+                while (matcher.find()) {
+                    if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                        String policyUrl = realSourceUrl + tag + matcher.group(1);
+                        System.out.println(policyUrl);
+                        System.out.println(matcher.group(2));
+
+                        policy.setPolicyUrl(policyUrl);
+                        policy.setPolicyTitle(matcher.group(2));
+                        policy.setPolicySource(sourceName);
+                        policy.setPolicyKeywords("");
+                        policy.setPolicyContent("");
+
+                        String policyHtml = GetHtml.getHtml(policyUrl);
+                        String dates = FindDate.findDate(policyHtml);
+                        if(!"".equals(dates) && Integer.parseInt(dates.split("-")[0]) > limitYear) {
+                            policy.setPublishTime(dates);
+                        } else {
+                            policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                        }
+
+                        Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                        while (matcher1.find()) {
+                            String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                            policy.setPolicyContent(text.trim());
+                        }
+                        VedioInfoSave.insert(policy);
+                    }
+                }
+            }
+        }
+    }
+
+    public static void cbrc(Policy policy, String sourceUrl, String sourceName, String sourceRule) {
+        String content = "<!--StartFragment-->([\\s\\S]*?)<!--EndFragment-->";
+        System.out.println(GetHtml.getHtml4("http://www.cbrc.gov.cn/chinese/newListDoc/111003/2.html"));
+        int pages = GetPage.getCbrcPage(GetHtml.getHtml4("http://www.cbrc.gov.cn/chinese/newListDoc/111003/1.html"));
+        for (int i = 1; i <= pages; i++) {
+            String realHtml;
+            realHtml = GetHtml.getHtml4(String.format("http://www.cbrc.gov.cn/chinese/newListDoc/111003/%s.html", i));
+            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+
+            while (matcher.find()) {
+                if (Integer.parseInt(matcher.group(3)) > limitYear) {
+                    String policyUrl = "http://www.cbrc.gov.cn" + matcher.group(1);
+                    System.out.println(policyUrl);
+                    System.out.println(matcher.group(2));
+
+                    policy.setPolicyUrl(policyUrl);
+                    policy.setPolicyTitle(matcher.group(2));
+                    policy.setPolicySource(sourceName);
+                    policy.setPolicyKeywords("");
+                    policy.setPublishTime(matcher.group(3) + "-" + matcher.group(4) + "-" + matcher.group(5));
+                    policy.setPolicyContent("");
+
+                    String policyHtml = GetHtml.getHtml(policyUrl);
+                    Matcher matcher1 = Pattern.compile(content).matcher(policyHtml);
+                    while (matcher1.find()) {
+                        String text = matcher1.group(1).replaceAll("<style[\\s\\S]*?/style>|<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+                        policy.setPolicyContent(text.trim());
+                    }
+                    VedioInfoSave.insert(policy);
+                }
+            }
+        }
+
     }
 
     public static void main(String[] args) {

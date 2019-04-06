@@ -39,35 +39,45 @@ public class Rules {
                     "[\\s\\S]*?<li class=\"fbrq\".*?title=\"(\\d{4})年(\\d+)月(\\d+)日\">[\\s\\S]*?<td width=\"420px\" " +
                     "colspan=\"3\">(.*?)</td>";
         }
-        if("中华人民共和国交通运输部".equals(sourceName)) {
-            sourceRule = "";
-        }
+//        if("中华人民共和国交通运输部".equals(sourceName)) {
+//            sourceRule = "";
+//        }
         if("中华人民共和国工业和信息化部".equals(sourceName)) {
-            sourceRule = "a";
+//            sourceRule = "\"ownSubjectDn\":\"\\\\/1\\\\/29\\\\/(\\d+)\\\\/(\\d+)\\\\/(\\d+)\\\\/(\\d+)\"" +
+//                    "[\\s\\S]*?\"id\":\"(\\d+)\",\"title\":\"(.*?)\"[\\s\\S]*?\"scrq\":\"(\\d{4})-(\\d+)-(\\d+)\"";
+            // 112页 之后的规则
+            sourceRule = "\"id\":\"(\\d+)\"[\\s\\S]*?\"title\":\"(.*?)\"[\\s\\S]*?\"[\\s\\S]*?" +
+                    "publishTime\":\"(\\d{4})(\\d{2})(\\d{2})\\d+\"," +
+                    "\"ownSubjectDn\":\"\\\\/1\\\\/29\\\\/(\\d+)\\\\/(\\d+)\\\\/(\\d+)\\\\/(\\d+)\"";
         }
         if("中华人民共和国财政部".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<td class=\"ZITI\" title=\".*?\">[\\s\\S]*?<a href=\"(.*?)\">(.*?)</a>" +
+                    "[\\s\\S]*?(\\d{4})-(\\d+)-(\\d+)[\\s\\S]*?</td>";
         }
         if("中华人民共和国审计署".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "\"id\":\"(\\d+)\"[\\s\\S]*?\"title\":\"(.*?)\"[\\s\\S]*?" +
+                    "\"scrq\":\"(\\d{4})-(\\d{2})-(\\d{2})\"[\\s\\S]*?\"htmlContent\":\"([\\s\\S]*?)\"}";
         }
         if("国务院国有资产监督管理委员会".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<li>[\\s\\S]*?<a href=\"../../../(.*?)\" target=\"_blank\" title=\"(.*?)\">[\\s\\S]*?</a>" +
+                    "<span>\\[(\\d{4})-(\\d+)-(\\d+)\\]</span></li>";
         }
         if("中华人民共和国海关总署".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<li><a href=\"(.*?)\"[\\s\\S]*?title=\"(.*?)\">[\\s\\S]*?</a><span>(\\d{4})-(\\d+)-(\\d+)</span></li>";
         }
         if("国家机关事务管理局".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<dt>[\\s\\S]*?<a href='./(.*?)' target='_blank'><script>showTitle\\('([\\s\\S]*?)'\\);" +
+                    "</script></a><i>(\\d{4})-(\\d+)-(\\d+)</i></dt>";
         }
         if("国务院港澳事务办公室".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<li><a href=\"./(.*?)\".*?title=\"([\\s\\S]*?)\">[\\s\\S]*?</a><span>(\\d{4})-(\\d+)-(\\d+)</span></li>";
         }
         if("中国证券监督管理委员会".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<li>[\\s\\S]*?<a href=\"./(.*?)\".*?title=\"(.*?)\">[\\s\\S]*?</a>[\\s\\S]*?<span>(\\d{4})-(\\d+)-(\\d+)</span>";
         }
         if("中国银行保险监督管理委员会".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<tr>[\\s\\S]*?<a href=\"(.*?)\" target=\"_blank\"[\\s\\S]*?title=\"(.*?)\"[\\s\\S]*?\">" +
+                    "[\\s\\S]*?</a>[\\s\\S]*?</td>[\\s\\S]*?<td[\\s\\S]*?>[\\s\\S]*?(\\d{4})-(\\d+)-(\\d+)[\\s\\S]*?</td>[\\s\\S]*?</tr>";
         }
         if("中国民用航空局".equals(sourceName)) {
             sourceRule = "a";

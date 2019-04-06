@@ -27,9 +27,8 @@ public class GetHtml {
         // 添加 readTimeout 解决 read超时报错问题
         OkHttpClient client = new OkHttpClient()
                 .newBuilder()
-                .connectTimeout(8000, TimeUnit.SECONDS)
-                .readTimeout(8000, TimeUnit.SECONDS)
-
+                .connectTimeout(80000, TimeUnit.SECONDS)
+                .readTimeout(80000, TimeUnit.SECONDS)
                 .build();
 
         Request request = new Request.Builder()
@@ -108,4 +107,82 @@ public class GetHtml {
         return html;
     }
 
+    public static String getHtml3(String url){
+        // 添加 readTimeout 解决 read超时报错问题
+        OkHttpClient client = new OkHttpClient()
+                .newBuilder()
+                .connectTimeout(80000, TimeUnit.SECONDS)
+                .readTimeout(80000, TimeUnit.SECONDS)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36")
+
+                .build();
+
+        String html = null;
+        try {
+            Response response = client.newCall(request).execute();
+
+            // 响应
+            if (!response.isSuccessful()) {
+                throw new IOException("服务端错误" + response);
+            }
+
+            // 正文
+            ResponseBody body = response.body();
+            assert body != null;
+
+            // 获取返回的数据，可通过response.body().string()获取，默认返回的是utf-8格式
+            byte[] b = body.bytes();
+            html = new String(b, "GB2312");
+
+            body.close();
+            response.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return html;
+    }
+
+    public static String getHtml4(String url){
+        // 添加 readTimeout 解决 read超时报错问题
+        OkHttpClient client = new OkHttpClient()
+                .newBuilder()
+                .connectTimeout(80000, TimeUnit.SECONDS)
+                .readTimeout(80000, TimeUnit.SECONDS)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36")
+                .header("Cookie", "__jsluid=e6a24f36ff94df075e99c5a1142a8b18; __jsl_clearance=1554565132.919|0|831du1sxQ1KK10%2Fm7i4AI%2BQ3Ygw%3D")
+                .build();
+
+        String html = null;
+        try {
+            Response response = client.newCall(request).execute();
+
+            // 响应
+            if (!response.isSuccessful()) {
+                throw new IOException("服务端错误" + response);
+            }
+
+            // 正文
+            ResponseBody body = response.body();
+            assert body != null;
+
+            // 获取返回的数据，可通过response.body().string()获取，默认返回的是utf-8格式
+            html = body.string();
+
+            body.close();
+            response.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return html;
+    }
 }
