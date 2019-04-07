@@ -39,9 +39,10 @@ public class Rules {
                     "[\\s\\S]*?<li class=\"fbrq\".*?title=\"(\\d{4})年(\\d+)月(\\d+)日\">[\\s\\S]*?<td width=\"420px\" " +
                     "colspan=\"3\">(.*?)</td>";
         }
-//        if("中华人民共和国交通运输部".equals(sourceName)) {
-//            sourceRule = "";
-//        }
+        if("中华人民共和国交通运输部".equals(sourceName)) {
+            sourceRule = "<li class=\"fl w100\".*?\"><a href=\"(.*?)\".*?title=\"([\\s\\S]*?)\".*?\">[\\s\\S]*?" +
+                    "</a><span class=\"fr\">[\\s\\S]*?(\\d{4})年(\\d+)月(\\d+)日</span></li>";
+        }
         if("中华人民共和国工业和信息化部".equals(sourceName)) {
 //            sourceRule = "\"ownSubjectDn\":\"\\\\/1\\\\/29\\\\/(\\d+)\\\\/(\\d+)\\\\/(\\d+)\\\\/(\\d+)\"" +
 //                    "[\\s\\S]*?\"id\":\"(\\d+)\",\"title\":\"(.*?)\"[\\s\\S]*?\"scrq\":\"(\\d{4})-(\\d+)-(\\d+)\"";
@@ -76,20 +77,20 @@ public class Rules {
             sourceRule = "<li>[\\s\\S]*?<a href=\"./(.*?)\".*?title=\"(.*?)\">[\\s\\S]*?</a>[\\s\\S]*?<span>(\\d{4})-(\\d+)-(\\d+)</span>";
         }
         if("中国银行保险监督管理委员会".equals(sourceName)) {
-            sourceRule = "<tr>[\\s\\S]*?<a href=\"(.*?)\" target=\"_blank\"[\\s\\S]*?title=\"(.*?)\"[\\s\\S]*?\">" +
-                    "[\\s\\S]*?</a>[\\s\\S]*?</td>[\\s\\S]*?<td[\\s\\S]*?>[\\s\\S]*?(\\d{4})-(\\d+)-(\\d+)[\\s\\S]*?</td>[\\s\\S]*?</tr>";
+            sourceRule = "<div class=\"maincontent\">[\\s\\S]*?<a href='(.*?)' target='_bank'[\\s\\S]*?>" +
+                    "<span[\\s\\S]*?title=\"[\\s\\S]*?\">([\\s\\S]*?)</span>[\\s\\S]*?<li style=\".*?\">" +
+                    "[\\s\\S]*?(\\d{4})-(\\d+)-(\\d+)[\\s\\S]*?</li>[\\s\\S]*?</div>";
         }
         if("中国民用航空局".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<tr>[\\s\\S]*?<a href=\"(.*?)\".*?name=\"(.*?)\">[\\s\\S]*?</a>[\\s\\S]*?" +
+                    "<td style=\"width:10%\" class=\"tdRQ\">[\\s\\S]*?(\\d{4})年(\\d+)月(\\d+)日[\\s\\S]*?</td>[\\s\\S]*?</tr>";
         }
         if("国家铁路局".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<li><span>(\\d{4})-(\\d+)-(\\d+)</span><a href='(.*?)'.*?title='(.*?)'>[\\s\\S]*?</a></li>";
         }
         if("国家邮政局".equals(sourceName)) {
-            sourceRule = "a";
-        }
-        if("中华人民共和国交通运输部".equals(sourceName)) {
-            sourceRule = "a";
+            sourceRule = "<li><span.*?>.*?(\\d{4})-(\\d+)-(\\d+).*?</span>[\\s\\S]*?<a href=\"(.*?)\".*?" +
+                    "title=\"(.*?)\" postcnx>[\\s\\S]*?</a>[\\s\\S]*?</li>";
         }
 
 

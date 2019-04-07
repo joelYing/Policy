@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @PackageName com.spider.kan360.web
+ * @PackageName com.spider.policy.web
  * @Author joel
  * @Date 2019/2/1 15:32
  **/
@@ -21,9 +21,13 @@ public class PolicyController {
 
     @GetMapping("/allPolicy")
     @ResponseBody
-    public List<Policy> mulConditions(int page) {
+    public List<Policy> mulConditions(@RequestParam(value = "policyTitle") String policyTitle,
+                                      @RequestParam(value = "policySource") String policySource,
+                                      @RequestParam(value = "timeby") String timeby,
+                                      @RequestParam(value = "rank") String rank, int page) {
         PageHelper.startPage(page, 20);
-        return policyMapper.getAllPolicies();
+        // /mulConditions?vedioName=海王&types=&year=&area=大陆&timeby=updatetime&rank=asc
+        return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
     }
 
 //    /**

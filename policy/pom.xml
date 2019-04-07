@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.spider</groupId>
-    <artifactId>kan360</artifactId>
+    <artifactId>policy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kan360</name>
+    <name>policy</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -38,7 +38,9 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web-services</artifactId>
+            <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -78,24 +80,18 @@
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
             <version>3.12.1</version>
+            <optional>true</optional>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.8</version>
+            <version>4.5.6</version>
         </dependency>
-
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.10.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.xml</groupId>
-            <artifactId>jaxp-api</artifactId>
-            <version>1.4.2</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.htmlcleaner</groupId>
@@ -133,6 +129,24 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>4.1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.4.0</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>htmlunit-driver</artifactId>
+            <version>2.27</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>2.18</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

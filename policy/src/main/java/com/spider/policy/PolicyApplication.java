@@ -16,7 +16,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class PolicyApplication {
     public static void main(String[] args) {
         SpringApplication.run(PolicyApplication.class, args);
-
     }
 }
 

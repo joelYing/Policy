@@ -11,7 +11,7 @@ import java.util.List;
 
 
 public interface PolicyService {
-    List<Policy> getAllPolicy();
+    List<Policy> getAllPolicy(String policyTitle, String policySource, String timeby, String rank);
 
     List<VedioInfos> getVedioByMulcondition(String vedioName, String types, String year,
                                             String area, String timeby, String rank);

@@ -8,7 +8,7 @@ import java.util.List;
 
 
 /**
- * @PackageName com.spider.kan360.service
+ * @PackageName com.spider.policy.service
  * @Author joel
  * @Date 2019/2/1 15:13
  **/
@@ -16,12 +16,11 @@ import java.util.List;
 @Service
 public class PolicyServiceImpl implements PolicyService {
     @Autowired
-//    public VedioMapper vedioMapper;
     public PolicyMapper policyMapper;
 
     @Override
-    public List<Policy> getAllPolicy() {
-        return policyMapper.getAllPolicies();
+    public List<Policy> getAllPolicy(String policyTitle, String policySource, String timeby, String rank) {
+        return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
     }
 
     @Override

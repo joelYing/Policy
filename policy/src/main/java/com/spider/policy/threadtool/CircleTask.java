@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * @PackageName com.spider.kan360.threadtool
+ * @PackageName com.spider.policy.threadtool
  * @Author joel
  * @Date 2019/3/8 18:34
  **/

@@ -96,7 +96,7 @@ public class GetPage {
 
     public static int getCbrcPage(String response) {
         String page = "1";
-        String pages = "下页</a> <a target\"_self\" href=\"(\\d+)\\.html\">末页</a>";
+        String pages = "下页</a> <a target\"_self\" href=\"more\\.do\\?itemUuid=800103&current=(\\d+)\">末页</a>";
         Pattern pattern = Pattern.compile(pages);
         Matcher matcher = pattern.matcher(response);
 
