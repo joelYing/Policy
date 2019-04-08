@@ -100,5 +100,19 @@ at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccess
 
 ```
 
-### 彻底解决unable to find valid certification path to requested target
+* 彻底解决unable to find valid certification path to requested target
 <https://blog.csdn.net/frankcheng5143/article/details/52164939>
+
+* Caused by: java.lang.IllegalArgumentException: 不支持：http://javax.xml.XMLConstants/property/accessExternalDTD
+<https://community.pega.com/support/support-articles/error-occurs-when-using-soap-integartion-parse-xml>
+```
+@SpringBootApplication
+@EnableScheduling
+@MapperScan("com.spider.policy.mapper")
+public class PolicyApplication {
+    public static void main(String[] args) {
+        System.setProperty("javax.xml.transform.TransformerFactory","com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl");
+        SpringApplication.run(PolicyApplication.class, args);
+    }
+}
+```

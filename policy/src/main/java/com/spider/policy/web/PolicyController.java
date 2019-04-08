@@ -26,27 +26,8 @@ public class PolicyController {
                                       @RequestParam(value = "timeby") String timeby,
                                       @RequestParam(value = "rank") String rank, int page) {
         PageHelper.startPage(page, 20);
-        // /mulConditions?vedioName=海王&types=&year=&area=大陆&timeby=updatetime&rank=asc
+        // http://127.0.0.1:8080/allPolicy?policyTitle=%E5%AE%81%E6%B3%A2&policySource=&timeby=publish_time&rank=desc&page=2
         return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
     }
-
-//    /**
-//     * 可按照年代、类型、地区、影片名称 模糊匹配 多条件查询获取影片列表，可按照创建时间、更新时间 自定义排序方式 kan_allvedio
-//     * value = "", required = true 就是必须要有(默认为true)
-//     *
-//     * ： /mulConditions?vedioName=海王&types=&year=&area=大陆&timeby=updatetime&rank=asc
-//     */
-//    @GetMapping("/mulConditions")
-//    @ResponseBody
-//    public List<VedioInfos> mulConditions(@RequestParam(value = "vedioName") String vedioName,
-//                                          @RequestParam(value = "types") String types,
-//                                          @RequestParam(value = "year") String year,
-//                                          @RequestParam(value = "area") String area,
-//                                          @RequestParam(value = "timeby") String timeby,
-//                                          @RequestParam(value = "rank") String rank,
-//                                          int page) {
-//        PageHelper.startPage(page, 20);
-//        return vedioMapper.getVedioByMulConditions(vedioName, types, year, area, timeby, rank);
-//    }
 
 }

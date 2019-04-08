@@ -1,8 +1,6 @@
 package com.spider.policy.threadtool;
 
-import com.spider.policy.bases.KanId;
 import lombok.Data;
-
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -22,7 +20,7 @@ public class CircleTask implements Runnable {
 
     @Override
     public void run() {
-        KanId.getIdList(url);
+//        somefunk();
         status=0;
         threadsSignal.countDown();
     }

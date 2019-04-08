@@ -15,6 +15,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @MapperScan("com.spider.policy.mapper")
 public class PolicyApplication {
     public static void main(String[] args) {
+        System.setProperty("javax.xml.transform.TransformerFactory","com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl");
         SpringApplication.run(PolicyApplication.class, args);
     }
 }

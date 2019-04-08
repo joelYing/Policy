@@ -23,17 +23,4 @@ public class PolicyServiceImpl implements PolicyService {
         return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
     }
 
-    @Override
-    public List<VedioInfos> getVedioByMulcondition(String vedioName, String types, String year, String area, String timeby, String rank) {
-        return null;
-    }
-
-//    /**
-//     * 可按照年代、类型、地区、影片名称模糊匹配多条件查询获取影片列表，创建时间排序
-//     */
-//    @Override
-//    public List<VedioInfos> getVedioByMulcondition(String vedioName, String types, String year, String area, String timeby, String rank) {
-//        return vedioMapper.getVedioByMulConditions(vedioName, types, year, area, timeby, rank);
-//    }
-
 }
