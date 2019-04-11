@@ -20,7 +20,7 @@ public class QuartzService {
      */
     @Scheduled(cron = "0 40 9 1/1 * ?")
     public void updateCrawl() throws InterruptedException {
-        GetSource.getSourceUrls();
+        GetSource.getSourceLists();
         System.out.println("now time:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
     }
 

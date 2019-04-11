@@ -21,7 +21,7 @@ public class SaveSource {
                 String name = ss[0];
                 String url = ss[1];
                 System.out.println(name + ": " + url);
-                InfoSave.insertSource(name, url);
+//                InfoSave.insertSource(name, url);
             }
         } catch (IOException e) {
             e.printStackTrace();
