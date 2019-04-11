@@ -1,7 +1,8 @@
-package com.spider.policy.service;
+package com.spider.policy.service.impl;
 
 import com.spider.policy.entity.*;
 import com.spider.policy.mapper.PolicyMapper;
+import com.spider.policy.service.PolicyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -21,6 +22,11 @@ public class PolicyServiceImpl implements PolicyService {
     @Override
     public List<Policy> getAllPolicy(String policyTitle, String policySource, String timeby, String rank) {
         return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
+    }
+
+    @Override
+    public int insertSourceList(int sourceId, String url, String tag, String header, String regular, int monitor) {
+        return policyMapper.insertSourceList(sourceId, url, tag, header, regular, monitor);
     }
 
 }

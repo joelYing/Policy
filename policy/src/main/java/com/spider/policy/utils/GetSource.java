@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @PackageName com.spider.kan360.utils
+ * @PackageName com.spider.policy.utils
  * @Author joel
  * @Date 2019/4/2 16:23
  **/
@@ -1020,7 +1020,7 @@ public class GetSource {
                             System.out.println("403");
                         }
                         try {
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.SECONDS.sleep(1);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

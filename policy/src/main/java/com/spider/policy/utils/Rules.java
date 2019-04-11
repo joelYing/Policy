@@ -21,7 +21,7 @@ public class Rules {
                     "[\\s\\S]*?<li class=\"fbrq\" title=\".*?\">(\\d+)年(\\d+)月(\\d+)日</li>";
         }
         if("国家税务总局".equals(sourceName)) {
-            sourceRule = "<dd><a href=\"../..(.*?)\" target=_blank title=\"(.*?)\"><span style=\".*?\">.*?</span>.*?</a></dd>";
+            sourceRule = "<dd><a href=\"(.*?)\" target=_blank title=\"(.*?)\"><span style=\".*?\">.*?</span>.*?</a></dd>";
         }
         if("国家统计局".equals(sourceName)) {
             sourceRule = "<li class=\"mc\">[\\s\\S]*?<a href=\"../../..(.*?)\" target=\"_blank\" .*?\">(.*?)</a>" +

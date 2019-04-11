@@ -1,6 +1,8 @@
 package com.spider.policy.service;
 
 import com.spider.policy.entity.*;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
@@ -9,7 +11,8 @@ import java.util.List;
  * @Date 2019/2/2 11:36
  **/
 
-
 public interface PolicyService {
     List<Policy> getAllPolicy(String policyTitle, String policySource, String timeby, String rank);
+
+    int insertSourceList(int sourceId, String url, String tag, String header, String regular, int monitor);
 }

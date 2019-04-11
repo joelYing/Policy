@@ -284,6 +284,6 @@ public class GetHtml {
 
     public static void main(String[] args) {
 //        getHtml4("http://www.cbrc.gov.cn/govView_F26E79837C9A48878A1B6616BB80FF73.html");
-        getHtml5("http://www.chinatax.gov.cn/n810341/n810755/c4199190/content.html");
+        System.out.println(getHtml5("http://www.chinatax.gov.cn/n810341/n810755/c4199190/content.html"));
     }
 }

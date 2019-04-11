@@ -35,4 +35,11 @@ public interface PolicyMapper {
                                 @Param("timeby") String timeby,
                                 @Param("rank") String rank);
 
+    @Insert("insert into source_list(source_id, url, tag, header, regular, monitor) values(#{sourceId}, " +
+            "#{url}, #{tag}, #{header}, #{regular}, #{monitor})")
+    int insertSourceList(@Param("sourceId") int sourceId, @Param("url") String url,
+                    @Param("tag") String tag, @Param("header") String header,
+                    @Param("regular") String regular, @Param("monitor") int monitor);
+
+
 }

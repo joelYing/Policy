@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>learn Resources</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<link rel="stylesheet" th:href="@{../css/bootstrap.css}" />
+<script type="text/javascript" th:src="@{../js/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+
+
+<body>
+<div class="container">
+    <h1>查询结果</h1>
+    <table border="1" align="center">
+        <tr>
+            <th>序号</th>
+            <th>标题</th>
+            <th>链接</th>
+            <th>来源</th>
+            <th>发布时间</th>
+        </tr>
+        <tr th:each="p:${policyPageInfo.list}">
+            <td th:text="${p.getId()}"></td>
+            <td th:text="${p.getPolicyTitle()}"></td>
+            <td><a th:href="${p.getPolicyUrl()}" target="_blank">传送门</a></td>
+            <td th:text="${p.getPolicySource()}"></td>
+            <td th:text="${p.getPublishTime()}"></td>
+        </tr>
+
+    </table>
+    <div align="center" style="margin-top:2%;">
+        <div align="center">
+            当前 第 [[${policyPageInfo.pageNum}]] 页, 共 [[${policyPageInfo.pages}]] 页 总计 [[${policyPageInfo.total}]] 条记录
+        </div>
+
+        <div align="center">
+        <ul class="pagination">
+            <li th:if="${policyPageInfo.hasPreviousPage}">
+                <a th:href="${baseUrl + '1'}">首页</a>
+                <a th:href="${baseUrl + (policyPageInfo.getPageNum() - 1)}">上一页</a>
+            </li>
+
+            <li class="prev" th:if="${policyPageInfo.hasPreviousPage}">
+                <a th:href="${baseUrl + policyPageInfo.prePage}">
+                    <i class="ace-icon fa fa-angle-double-left"></i>
+                </a>
+            </li>
+            <!--遍历条数-->
+            <li th:each="nav:${policyPageInfo.navigatepageNums}">
+                <a th:href="${baseUrl + nav}" th:text="${' ' + nav + ' '}" th:if="${nav != policyPageInfo.pageNum}"></a>
+                <span style="font-weight: bold;" th:if="${nav == policyPageInfo.pageNum}" th:text="${nav}" ></span>
+            </li>
+
+            <li class="next" th:if="${policyPageInfo.hasNextPage}">
+                <a th:href="${baseUrl + policyPageInfo.nextPage}">
+                    <i class="ace-icon fa fa-angle-double-right"></i>
+                </a>
+            </li>
+
+            <li th:if="${policyPageInfo.hasNextPage}">
+                <a th:href="${baseUrl + (policyPageInfo.getNextPage())}">下一页</a>
+                <a th:href="${baseUrl + policyPageInfo.pages}">尾页</a>
+            </li>
+
+        </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

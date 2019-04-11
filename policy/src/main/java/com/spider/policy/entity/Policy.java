@@ -12,7 +12,7 @@ import java.sql.Timestamp;
 @Data
 public class Policy {
     private int id;
-    private String policyUrl;
+    private String sourceId;
     private String policyTitle;
     private String policyContent;
     private String policySource;
