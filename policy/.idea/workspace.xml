@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1503c8d9-7470-40a5-9162-9ab8681eda2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -268,7 +267,7 @@
           <entry key="class" value="5" />
           <entry key="dummy" value="1" />
           <entry key="html" value="1035" />
-          <entry key="java" value="9606" />
+          <entry key="java" value="9611" />
           <entry key="jsp" value="2" />
           <entry key="md" value="26" />
           <entry key="properties" value="21" />
@@ -280,13 +279,18 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="HTML" value="1035" />
-          <entry key="JAVA" value="9605" />
+          <entry key="JAVA" value="9610" />
           <entry key="JSP" value="2" />
           <entry key="Markdown" value="26" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="Properties" value="21" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.checkout.as.new.branch" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -349,12 +353,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+            <state relative-caret-position="88">
+              <caret line="567" column="105" selection-start-line="567" selection-start-column="28" selection-end-line="567" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#65475#65476#0" expanded="true" />
-                <element signature="e#65507#65508#0" expanded="true" />
+                <element signature="e#66677#66678#0" expanded="true" />
+                <element signature="e#66709#66710#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -364,7 +368,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1013">
-              <caret line="327" column="5" lean-forward="true" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="5" />
+              <caret line="327" column="5" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -376,7 +380,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="520">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -385,7 +389,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="183">
-              <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
+              <caret line="170" selection-start-line="170" selection-end-line="170" />
             </state>
           </provider>
         </entry>
@@ -394,7 +398,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/InfoSave.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
-              <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+              <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -405,7 +409,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="400">
               <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -418,7 +422,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="16" column="92" lean-forward="true" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
+              <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -466,6 +470,9 @@
       <find>===</find>
       <find>&lt;!--文章正文--&gt;</find>
     </findStrings>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/heads/general" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -690,18 +697,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="spider" type="462c0819:PsiDirectoryNode" />
               <item name="policy" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="spider" type="462c0819:PsiDirectoryNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -721,40 +716,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="policy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="policy" type="b2602c69:ProjectViewProjectNode" />
@@ -815,7 +776,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555061139892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555064586895" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
@@ -985,7 +946,7 @@
       <workItem from="1554514101920" duration="32110000" />
       <workItem from="1554600664275" duration="30085000" />
       <workItem from="1554688955102" duration="33670000" />
-      <workItem from="1554778469558" duration="86241000" />
+      <workItem from="1554778469558" duration="89467000" />
     </task>
     <task id="LOCAL-00001" summary="360kan">
       <created>1550818705961</created>
@@ -1005,7 +966,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="880281000" />
+    <option name="totallyTimeSpent" value="883507000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1030,7 +991,7 @@
       <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32955465" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995905" visible="true" weight="0.3020243" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995905" visible="true" weight="0.30931175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34565917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1398,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="400">
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1409,7 +1370,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="16" column="92" lean-forward="true" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
+          <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -1423,7 +1384,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/InfoSave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
-          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+          <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1457,21 +1418,21 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1013">
-          <caret line="327" column="5" lean-forward="true" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="5" />
+          <caret line="327" column="5" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1480,12 +1441,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state relative-caret-position="88">
+          <caret line="567" column="105" selection-start-line="567" selection-start-column="28" selection-end-line="567" selection-end-column="105" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#65475#65476#0" expanded="true" />
-            <element signature="e#65507#65508#0" expanded="true" />
+            <element signature="e#66677#66678#0" expanded="true" />
+            <element signature="e#66709#66710#0" expanded="true" />
           </folding>
         </state>
       </provider>
