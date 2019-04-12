@@ -16,6 +16,8 @@ import okhttp3.Response;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
@@ -33,36 +35,189 @@ public class GetSource {
 
     public static void getSourceLists() {
         ArrayList<SourceList> sourceListArrayList = InfoSave.selectSourceList();
-        for(SourceList sourceList : sourceListArrayList) {
-            if (sourceList.getUseTool() == 1) {
-                getByTools(sourceList);
+//        for(SourceList sourceList : sourceListArrayList) {
+//            if (sourceList.getUseTool() == 1) {
+//                getByTools(sourceList);
+//            }
+//            if (sourceList.getUseTool() == 0) {
+//                getByGenerals(sourceList);
+//            }
+////            break;
+//        }
+        for (int i = 0;i < sourceListArrayList.size();i++) {
+            if (i == 20) {
+                if (sourceListArrayList.get(i).getUseTool() == 1) {
+                    getByTools(sourceListArrayList.get(i));
+                }
+                if (sourceListArrayList.get(i).getUseTool() == 0) {
+                    getByGenerals(sourceListArrayList.get(i));
+                }
             }
-            if (sourceList.getUseTool() == 0) {
-                getByGenerals(sourceList);
-            }
-            break;
+
         }
     }
 
     public static void getByTools(SourceList sourceList) {
+        String url = sourceList.getUrl();
+        Page page;
         if (sourceList.getMorePage() == 0) {
-            String url = sourceList.getUrl();
+            page = PageExtract.url(url);
+            pageTool(sourceList, page);
+        }
+        if (sourceList.getMorePage() == 1) {
+            page = PageExtract.url(String.format(url, sourceList.getPageStartNum()));
+            if (!"".equals(sourceList.getPageReg())) {
+                Matcher matcher = Pattern.compile(sourceList.getPageReg()).matcher(page.getHtml());
+                while (matcher.find()) {
+                    String totalPage = matcher.group(1);
+                    for (int p = sourceList.getPageStartNum(); p < Integer.parseInt(totalPage); p++) {
+                        System.out.println(p);
+                        Page pageMore = PageExtract.url(String.format(url, p));
+                        pageTool(sourceList, pageMore);
+                    }
+                }
+            } else if (sourceList.getPageLastNum() != 0) {
+                for (int p = sourceList.getPageStartNum(); p < sourceList.getPageLastNum(); p++) {
+                    System.out.println(p);
+                    Page pageMore = PageExtract.url(String.format(url, p));
+                    pageTool(sourceList, pageMore);
+                }
+            } else {
+                System.out.println("error");
+            }
 
-            Page page = PageExtract.url(url);
-            if (page != null) {
-                Set<String> links = page.getLinks();
-                if (links != null) {
-                    for (String link : links) {
-                        if (UrlUtils.guessArticleUrl(link, null)) {
-                            String regular = link;
-                            if (!"".equals(sourceList.getRegular())) {
-                                regular = sourceList.getRegular();
-                            }
-                            Matcher matcher = Pattern.compile(regular).matcher(link);
-                            while (matcher.find()) {
-                                String realLink = matcher.group();
-                                System.out.println("A -> " + realLink);
+        }
+    }
 
+    public static void getByGenerals(SourceList sourceList) {
+//        String realHtml;
+//        if (sourceList.getMorePage() == 0) {
+//            if (!"".equals(sourceList.getHeader())) {
+//                String headers = sourceList.getHeader();
+//                String hk = headers.split(":")[0];
+//                String hv = headers.split(":")[1];
+//
+//                realHtml = GetHtml.getHtml(sourceList.getUrl(), hk, hv);
+//                Matcher matcher = Pattern.compile(sourceList.getRegular()).matcher(realHtml);
+//
+//                while (matcher.find()) {
+//                    String policyUrl = "http://www.chinatax.gov.cn" + matcher.group(1);
+//                    System.out.println(policyUrl);
+//                    System.out.println(matcher.group(2));
+//
+//                }
+//            }
+//
+//        }
+//        if (sourceList.getMorePage() == 1) {
+//            page = PageExtract.url(String.format(url, sourceList.getPageStartNum()));
+//            if (!"".equals(sourceList.getPageReg())) {
+//                Matcher matcher = Pattern.compile(sourceList.getPageReg()).matcher(page.getHtml());
+//                while (matcher.find()) {
+//                    String totalPage = matcher.group(1);
+//                    for (int p = sourceList.getPageStartNum(); p < Integer.parseInt(totalPage); p++) {
+//                        System.out.println(p);
+//                        Page pageMore = PageExtract.url(String.format(url, p));
+//                        pageTool(sourceList, pageMore);
+//                    }
+//                }
+//            } else if (sourceList.getPageLastNum() != 0) {
+//                for (int p = sourceList.getPageStartNum(); p < sourceList.getPageLastNum(); p++) {
+//                    System.out.println(p);
+//                    Page pageMore = PageExtract.url(String.format(url, p));
+//                    pageTool(sourceList, pageMore);
+//                }
+//            } else {
+//                System.out.println("error");
+//            }
+//
+//        }
+//
+//        String content = "<li class=\"sv_texth3\" id=\"tax_content\">([\\s\\S]*?)</li>";
+//        String time = "税务总局[\\s\\S]*?(\\d+)年(\\d+)月(\\d+)日";
+//        for(int i = 1; i <= pages; i++) {
+//            String realHtml;
+//            if(i == 1) {
+//                realHtml = GetHtml.getHtml5(sourceUrl + "n810341/n810755/index.html");
+//            } else {
+//                realHtml = GetHtml.getHtml5(sourceUrl + String.format("n810341/n810755/index_3849171_%s.html", i - 1));
+//            }
+//            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
+//
+//            while (matcher.find()) {
+//                String policyUrl = "http://www.chinatax.gov.cn" + matcher.group(1);
+//                System.out.println(policyUrl);
+//                System.out.println(matcher.group(2));
+//
+//                policy.setPolicyUrl(policyUrl);
+//                policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;", ""));
+//                policy.setPolicySource(sourceName);
+//                policy.setPolicyKeywords("");
+//
+//                policy.setPolicyContent("");
+//                try {
+//                    String policyHtml = GetHtml.getHtml5(policyUrl);
+//                    Matcher matcher1 = Pattern.compile(time).matcher(policyHtml);
+//                    while (matcher1.find()) {
+//                        String times = matcher1.group(1) + "-" + matcher1.group(2) + "-" + matcher1.group(3);
+//                        policy.setPublishTime(times.trim());
+//                    }
+//                    Matcher matcher2 = Pattern.compile(content).matcher(policyHtml);
+//                    while (matcher2.find()) {
+//                        String text = matcher2.group(1).replaceAll("<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
+//                        policy.setPolicyContent(text.trim());
+//                    }
+//                } catch (Exception e) {
+//                    System.out.println("404");
+//                }
+//                InfoSave.insert(policy);
+//            }
+//            try {
+//                TimeUnit.SECONDS.sleep(2);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+    }
+
+    public static void pageTool(SourceList sourceList, Page page) {
+        Policy policy = new Policy();
+        if (page != null) {
+            Set<String> links = page.getLinks();
+            if (links != null) {
+                for (String link : links) {
+                    if (UrlUtils.guessArticleUrl(link, null) || UrlUtils.guessListUrl(link, null)) {
+                        String regular = link;
+                        if (!"".equals(sourceList.getRegular())) {
+                            regular = sourceList.getRegular();
+                        }
+                        Matcher matcher = Pattern.compile(regular).matcher(link);
+                        while (matcher.find()) {
+                            String realLink = matcher.group();
+                            System.out.println("A -> " + realLink);
+                            if (!"".equals(sourceList.getHeader())) {
+                                String headers = sourceList.getHeader();
+                                String hk = headers.split(":")[0];
+                                String hv = headers.split(":")[1];
+
+                                String realHtml = GetHtml.getHtml5(realLink, hk, hv);
+                                Matcher matcher1 = Pattern.compile(sourceList.getTitleReg()).matcher(realHtml);
+                                while (matcher1.find()) {
+                                    String title = matcher1.group(1).trim();
+                                    System.out.println(title);
+                                }
+                                Matcher matcher2 = Pattern.compile(sourceList.getContentReg()).matcher(realHtml);
+                                while (matcher2.find()) {
+                                    String content = matcher2.group(1).replaceAll("<.*?>|&.*?;|\\s", "").trim();
+                                    System.out.println(content);
+                                }
+                                Matcher matcher3 = Pattern.compile(sourceList.getTimeReg()).matcher(realHtml);
+                                while (matcher3.find()) {
+                                    String time = matcher3.group(1) + "-" + matcher3.group(2) + "-" + matcher3.group(3);
+                                    System.out.println(time);
+                                }
+
+                            } else {
                                 try (Response response = OkHttpUtils.client().newCall(OkHttpUtils.request(realLink)).execute()) {
                                     System.out.println(response.code());
                                     if (response.isSuccessful() && response.body() != null) {
@@ -77,7 +232,7 @@ public class GetSource {
                                         }
                                         Matcher matcher2 = Pattern.compile(sourceList.getContentReg()).matcher(html);
                                         while (matcher2.find()) {
-                                            String content = matcher2.group(1).trim().replaceAll("<.*?>|&.*?;", "");
+                                            String content = matcher2.group(1).replaceAll("<.*?>|&.*?;|\\s", "").trim();
                                             System.out.println(content);
                                         }
                                         Matcher matcher3 = Pattern.compile(sourceList.getTimeReg()).matcher(html);
@@ -85,25 +240,25 @@ public class GetSource {
                                             String time = matcher3.group(1) + "-" + matcher3.group(2) + "-" + matcher3.group(3);
                                             System.out.println(time);
                                         }
+
                                     }
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
                             }
+                            try {
+                                TimeUnit.SECONDS.sleep(1);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }
-
             }
         }
-        if (sourceList.getMorePage() == 1) {
-
-        }
     }
 
-    public static void getByGenerals(SourceList sourceList) {
 
-    }
 
 
 //    public static void getSourcePolicy(String sourceName, String sourceUrl, String sourceRule) {

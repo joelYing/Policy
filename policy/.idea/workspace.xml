@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1503c8d9-7470-40a5-9162-9ab8681eda2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_edu_hfut_dmic_webcollector_WebCollector_2_73_alpha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sleepycat_je_5_0_73.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Source.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6031d3b6-1aff-4180-ad5f-fa144ba46648.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6031d3b6-1aff-4180-ad5f-fa144ba46648.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/policy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/SourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/SourceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/InfoSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/InfoSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/SaveSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/SaveSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -250,7 +237,7 @@
           <entry key="class" value="7" />
           <entry key="css" value="8" />
           <entry key="html" value="9" />
-          <entry key="java" value="72" />
+          <entry key="java" value="74" />
           <entry key="js" value="4" />
           <entry key="jsp" value="2" />
           <entry key="md" value="3" />
@@ -267,7 +254,7 @@
           <entry key="CSS" value="8" />
           <entry key="Database Element" value="1" />
           <entry key="HTML" value="9" />
-          <entry key="JAVA" value="72" />
+          <entry key="JAVA" value="74" />
           <entry key="JSP" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="3" />
@@ -281,7 +268,7 @@
           <entry key="class" value="5" />
           <entry key="dummy" value="1" />
           <entry key="html" value="1035" />
-          <entry key="java" value="8469" />
+          <entry key="java" value="9606" />
           <entry key="jsp" value="2" />
           <entry key="md" value="26" />
           <entry key="properties" value="21" />
@@ -293,7 +280,7 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="HTML" value="1035" />
-          <entry key="JAVA" value="8468" />
+          <entry key="JAVA" value="9605" />
           <entry key="JSP" value="2" />
           <entry key="Markdown" value="26" />
           <entry key="PLAIN_TEXT" value="37" />
@@ -362,13 +349,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+            <state relative-caret-position="298">
+              <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#53196#53197#0" expanded="true" />
-                <element signature="e#53227#53228#0" expanded="true" />
+                <element signature="e#65475#65476#0" expanded="true" />
+                <element signature="e#65507#65508#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1013">
+              <caret line="327" column="5" lean-forward="true" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -478,7 +486,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/source.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/VedioInfoSave.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/FindDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryController.java" />
@@ -506,7 +513,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/impl/PolicyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/mapper/PolicyMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Policy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/Source.java" />
@@ -515,6 +521,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/entity/SourceList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/InfoSave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java" />
       </list>
     </option>
@@ -540,7 +548,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1533" />
+    <option name="width" value="1375" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -807,7 +815,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554980376762" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555061139892" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
@@ -977,7 +985,7 @@
       <workItem from="1554514101920" duration="32110000" />
       <workItem from="1554600664275" duration="30085000" />
       <workItem from="1554688955102" duration="33670000" />
-      <workItem from="1554778469558" duration="69784000" />
+      <workItem from="1554778469558" duration="86241000" />
     </task>
     <task id="LOCAL-00001" summary="360kan">
       <created>1550818705961</created>
@@ -997,7 +1005,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="863824000" />
+    <option name="totallyTimeSpent" value="880281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1009,9 +1017,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1517" height="1392" extended-state="0" />
+    <frame x="-7" y="0" width="1360" height="1392" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18325326" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18307692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1022,7 +1030,7 @@
       <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32955465" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995905" visible="true" weight="0.24939272" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995905" visible="true" weight="0.3020243" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34565917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1319,16 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1456,13 +1454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1470,14 +1461,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/UserAgents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        <state relative-caret-position="520">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1013">
+          <caret line="327" column="5" lean-forward="true" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#53196#53197#0" expanded="true" />
-            <element signature="e#53227#53228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#65475#65476#0" expanded="true" />
+            <element signature="e#65507#65508#0" expanded="true" />
           </folding>
         </state>
       </provider>

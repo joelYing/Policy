@@ -2,6 +2,7 @@ package com.spider.policy.bases;
 
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.spider.policy.utils.UserAgents;
 import okhttp3.*;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -38,7 +39,45 @@ public class GetHtml {
      * 获取网页源码
      */
 
-    public static String getHtml(String url){
+    public static String getHtml(String url) {
+        // 添加 readTimeout 解决 read超时报错问题
+        OkHttpClient client = new OkHttpClient()
+                .newBuilder()
+                .connectTimeout(80000, TimeUnit.SECONDS)
+                .readTimeout(80000, TimeUnit.SECONDS)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .header("User-Agent", UserAgents.getUa())
+                .build();
+
+        String html = null;
+        try {
+            Response response = client.newCall(request).execute();
+
+            // 响应
+            if (!response.isSuccessful()) {
+                throw new IOException("服务端错误" + response);
+            }
+
+            // 正文
+            ResponseBody body = response.body();
+            assert body != null;
+
+            // 获取返回的数据，可通过response.body().string()获取，默认返回的是utf-8格式
+            html = body.string();
+
+            body.close();
+            response.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return html;
+    }
+
+    public static String getHtml(String url, String hk, String hv) {
         // 添加 readTimeout 解决 read超时报错问题
         OkHttpClient client = new OkHttpClient()
                 .newBuilder()
@@ -49,6 +88,7 @@ public class GetHtml {
         Request request = new Request.Builder()
                 .url(url)
                 .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36")
+                .header(hk, hv)
                 .build();
 
         String html = null;
@@ -240,7 +280,7 @@ public class GetHtml {
 
     }
 
-    public static String getHtml5(String url) {
+    public static String getHtml5(String url, String hk, String hv) {
         // 添加 readTimeout 解决 read超时报错问题
         OkHttpClient client = new OkHttpClient()
                 .newBuilder()
@@ -250,12 +290,12 @@ public class GetHtml {
 
         Request request = new Request.Builder()
                 .url(url)
-//                .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36")
+                .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36")
 //                .header("Host", "www.chinatax.gov.cn")
 //                .header("Pragma", "no-cache")
 //                .header("Referer", "http://www.chinatax.gov.cn/n810341/n810755/c4195742/content.html")
 //                .header("Upgrade-Insecure-Requests", "1")
-                .header("Cookie","_Jo0OQK=2E0DB064660FBA71C8005795F5A22E00880FE963A7C36CC717FC0CE0B38CF5CF5680F278E697299F339CB480CEAD3B0678A1CDAC8A859521FACCD2808D7A2E4675434275DAD340EB4DDFFF13AA80B4DD4EFFFF13AA80B4DD4EFAB58C038EE9C1C1121CDDF25DF461B2DGJ1Z1VA==;")
+                .header(hk,hv)
                 .build();
 
         String html = null;
@@ -284,6 +324,6 @@ public class GetHtml {
 
     public static void main(String[] args) {
 //        getHtml4("http://www.cbrc.gov.cn/govView_F26E79837C9A48878A1B6616BB80FF73.html");
-        System.out.println(getHtml5("http://www.chinatax.gov.cn/n810341/n810755/c4199190/content.html"));
+//        System.out.println(getHtml5("http://www.chinatax.gov.cn/n810341/n810755/c4199190/content.html"));
     }
 }
