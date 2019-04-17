@@ -33,7 +33,7 @@ public class DbConnect {
                 dataSource.setUrl("jdbc:mysql://localhost:3306/policy?useUnicode=true&characterEncoding=UTF8&useSSL=false");
                 dataSource.setDriverClassName("com.mysql.jdbc.Driver");
                 dataSource.setUsername("root");
-                dataSource.setPassword("123456");
+                dataSource.setPassword("12138");
                 //配置初始化大小、最小、最大
                 dataSource.setInitialSize(10);
                 dataSource.setMinIdle(10);
