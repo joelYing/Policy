@@ -12,7 +12,7 @@ import java.util.List;
  **/
 
 public interface PolicyService {
-    List<Policy> getAllPolicy(String policyTitle, String policySource, String timeby, String rank);
+    List<Policy> getAllPolicy(String title, String sourceName, String rank);
 
     int insertSourceList(int sourceId, String url, String tag, String header, String regular, int monitor);
 }

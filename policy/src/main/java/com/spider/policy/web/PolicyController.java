@@ -53,16 +53,15 @@ public class PolicyController {
     }
 
     @GetMapping("/allPolicy")
-    public ModelAndView mulConditions(@RequestParam(value = "policyTitle") String policyTitle,
-                                      @RequestParam(value = "policySource") String policySource,
-                                      @RequestParam(value = "timeby") String timeby,
+    public ModelAndView mulConditions(@RequestParam(value = "title") String title,
+                                      @RequestParam(value = "sourceName") String sourcename,
                                       @RequestParam(value = "rank") String rank, int page,
                                       HttpServletRequest request) {
         ModelAndView mav = new ModelAndView();
         String baseUrl = request.getRequestURL() + "?" + request.getQueryString().split("page")[0] + "page=";
         PageHelper.startPage(page, 20);
         // http://127.0.0.1:8080/allPolicy?policyTitle=%E5%AE%81%E6%B3%A2&policySource=&timeby=publish_time&rank=desc&page=2
-        List<Policy> policyList = policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
+        List<Policy> policyList = policyMapper.getAllPolicies(title, sourcename, rank);
         PageInfo<Policy> policyPageInfo = new PageInfo<>(policyList);
         mav.addObject("policyPageInfo", policyPageInfo);
         mav.addObject("baseUrl", baseUrl);

@@ -18,21 +18,24 @@ public interface PolicyMapper {
     /**
      * @return 查询全部视频信息的数据
      */
-    @Select("select * from policies where policy_title like concat('%', #{policyTitle}, '%') " +
-            "and policy_source like concat('%', #{policySource}, '%') " +
-            "order by ${timeby} ${rank}")
+    @Select("select * from policies where title like concat('%', #{title}, '%') " +
+            "and source_name like concat('%', #{sourceName}, '%') " +
+            "order by published ${rank}")
     @Results({
             @Result(property = "id", column = "id"),
-            @Result(property = "policyUrl", column = "policy_url"),
-            @Result(property = "policyTitle", column = "policy_title"),
-//            @Result(property = "policyContent", column = "policy_content"),
-            @Result(property = "policySource", column = "policy_source"),
-            @Result(property = "policyKeywords", column = "policy_keywords"),
-            @Result(property = "publishTime", column = "publish_time"),
+            @Result(property = "sourceId", column = "source_id"),
+            @Result(property = "sourceName", column = "source_name"),
+            @Result(property = "country", column = "country"),
+            @Result(property = "province", column = "province"),
+            @Result(property = "city", column = "city"),
+            @Result(property = "tag", column = "tag"),
+            @Result(property = "url", column = "url"),
+            @Result(property = "title", column = "title"),
+            @Result(property = "content", column = "content"),
+            @Result(property = "published", column = "published"),
     })
-    List<Policy> getAllPolicies(@Param("policyTitle") String vedioName,
-                                @Param("policySource") String types,
-                                @Param("timeby") String timeby,
+    List<Policy> getAllPolicies(@Param("title") String title,
+                                @Param("sourceName") String sourceName,
                                 @Param("rank") String rank);
 
     @Insert("insert into source_list(source_id, url, tag, header, regular, monitor) values(#{sourceId}, " +

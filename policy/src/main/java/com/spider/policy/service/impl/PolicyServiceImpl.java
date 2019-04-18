@@ -20,8 +20,8 @@ public class PolicyServiceImpl implements PolicyService {
     public PolicyMapper policyMapper;
 
     @Override
-    public List<Policy> getAllPolicy(String policyTitle, String policySource, String timeby, String rank) {
-        return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
+    public List<Policy> getAllPolicy(String title, String sourceName,String rank) {
+        return policyMapper.getAllPolicies(title, sourceName, rank);
     }
 
     @Override

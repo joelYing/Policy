@@ -66,7 +66,8 @@ public class GetSource {
 ////            break;
 //        }
         for (int i = 0;i < sourceListArrayList.size();i++) {
-            if (i == 8) {
+            // error 21 22 23 以及use_tool 等于0的
+            if (i > 30) {
                 System.out.println(sourceListArrayList.get(i).getUrl());
                 if (sourceListArrayList.get(i).getUseTool() == 1) {
                     getByTools(sourceListArrayList.get(i));
@@ -271,7 +272,7 @@ public class GetSource {
                                 }
                             }
                             try {
-                                TimeUnit.SECONDS.sleep(1);
+                                TimeUnit.MILLISECONDS.sleep(500);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }

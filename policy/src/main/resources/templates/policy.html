@@ -15,17 +15,17 @@
     <table border="1" align="center">
         <tr>
             <th>序号</th>
-            <th>标题</th>
-            <th>链接</th>
             <th>来源</th>
+            <th>标签</th>
+            <th>链接</th>
             <th>发布时间</th>
         </tr>
         <tr th:each="p:${policyPageInfo.list}">
             <td th:text="${p.getId()}"></td>
-            <td th:text="${p.getPolicyTitle()}"></td>
-            <td><a th:href="${p.getPolicyUrl()}" target="_blank">传送门</a></td>
-            <td th:text="${p.getPolicySource()}"></td>
-            <td th:text="${p.getPublishTime()}"></td>
+            <td th:text="${p.getSourceName()}"></td>
+            <td th:text="${p.getTag()}"></td>
+            <td><a th:text="${p.getTitle()}" th:href="${p.getUrl()}" target="_blank"></a></td>
+            <td th:text="${p.getPublished()}"></td>
         </tr>
 
     </table>
