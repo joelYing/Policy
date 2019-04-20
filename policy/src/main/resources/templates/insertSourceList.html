@@ -3,7 +3,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Form Submission</title>
+    <title>Insert SourceList</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
 <body>
 <div style="text-align: center;">
     <br><br>
-    <h2 style="color:green">Form</h2>
+    <h2 style="color:green">InsertSourceList</h2>
     <br><br>
 
     <form class="form-horizontal" role="form" action="#" th:action="@{/insertSourceList}" th:object="${sourceList}" method="post">
@@ -108,7 +108,7 @@
         </div>
 
         <div class="form-group" style="width:300px">
-            <label for="morePage" class="col-sm-2 control-label">Header</label>
+            <label for="morePage" class="col-sm-2 control-label">morePage</label>
             <div class="col-sm-10">
                 <input type="text" th:field="*{morePage}" class="form-control" id="morePage" placeholder="Enter morePage">
             </div>

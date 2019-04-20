@@ -24,6 +24,8 @@ import java.util.List;
 @Controller
 @RequestMapping("/")
 public class PolicyController {
+
+
     @Autowired
     private PolicyMapper policyMapper;
 
@@ -59,23 +61,53 @@ public class PolicyController {
         return "resultList";
     }
 
-    @GetMapping("/allPolicy")
-    public ModelAndView mulConditions(@RequestParam(value = "title") String title,
-                                      @RequestParam(value = "sourceName") String sourcename,
-                                      @RequestParam(value = "rank") String rank, int page,
-                                      HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView();
-        String baseUrl = request.getRequestURL() + "?" + request.getQueryString().split("page")[0] + "page=";
-        PageHelper.startPage(page, 20);
-        // http://127.0.0.1:8080/allPolicy?policyTitle=%E5%AE%81%E6%B3%A2&policySource=&timeby=publish_time&rank=desc&page=2
-        List<Policy> policyList = policyMapper.getAllPolicies(title, sourcename, rank);
-        PageInfo<Policy> policyPageInfo = new PageInfo<>(policyList);
-        mav.addObject("policyPageInfo", policyPageInfo);
-        mav.addObject("baseUrl", baseUrl);
-        mav.setViewName("policy");
-
-//        return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
-        return mav;
+    @GetMapping("/queryPolicy")
+    public String mulConditions(Model model) {
+        model.addAttribute("postField", new PostField());
+        return "query";
     }
+
+    private PostField postField = null;
+
+    @RequestMapping("/allPolicy")
+    public String mulConditions(Model model, @ModelAttribute PostField field,HttpServletRequest request) {
+        if (field.getRank()!=null){
+            postField = field;
+        }
+
+
+        String pageNo = request.getQueryString();
+        if (pageNo==null){
+            pageNo = "page=1";
+        }
+        pageNo = pageNo.replace("page=","");
+        Integer pageNum = Integer.parseInt(pageNo);
+
+        PageHelper.startPage(pageNum, 20);
+        List<Policy> policyList = policyMapper.getAllPolicies(postField.getPolicyTitle(),
+                postField.getPolicySource(), postField.getRank());
+        PageInfo<Policy> policyPageInfo = new PageInfo<>(policyList);
+        model.addAttribute("policyPageInfo", policyPageInfo);
+        return "policy";
+    }
+
+//    @GetMapping("/allPolicy")
+//    public ModelAndView mulConditions(@RequestParam(value = "title") String title,
+//                                      @RequestParam(value = "sourceName") String sourcename,
+//                                      @RequestParam(value = "rank") String rank, int page,
+//                                      HttpServletRequest request) {
+//        ModelAndView mav = new ModelAndView();
+//        String baseUrl = request.getRequestURL() + "?" + request.getQueryString().split("page")[0] + "page=";
+//        PageHelper.startPage(page, 20);
+//        // http://127.0.0.1:8080/allPolicy?policyTitle=%E5%AE%81%E6%B3%A2&policySource=&timeby=publish_time&rank=desc&page=2
+//        List<Policy> policyList = policyMapper.getAllPolicies(title, sourcename, rank);
+//        PageInfo<Policy> policyPageInfo = new PageInfo<>(policyList);
+//        mav.addObject("policyPageInfo", policyPageInfo);
+//        mav.addObject("baseUrl", baseUrl);
+//        mav.setViewName("policy");
+//        return mav;
+//    }
+
+
 
 }
