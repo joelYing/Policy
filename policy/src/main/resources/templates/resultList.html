@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div style="text-align: center;">
+    <br><br>
+    <h2 style="color:green">Result</h2>
+    <br><br>
+
+    <ul class="list-group" style="width:300px">
+        <li class="list-group-item" th:text="'SourceId: ' + ${sourceList.sourceId}"></li>
+        <li class="list-group-item" th:text="'Url: ' + ${sourceList.url}"></li>
+        <li class="list-group-item" th:text="'Tag: ' + ${sourceList.tag}"></li>
+        <li class="list-group-item" th:text="'UseTool: ' + ${sourceList.useTool}"></li>
+        <li class="list-group-item" th:text="'Header: ' + ${sourceList.header}"></li>
+        <li class="list-group-item" th:text="'Regular: ' + ${sourceList.regular}"></li>
+        <li class="list-group-item" th:text="'titleReg: ' + ${sourceList.titleReg}"></li>
+        <li class="list-group-item" th:text="'contentReg: ' + ${sourceList.contentReg}"></li>
+        <li class="list-group-item" th:text="'pageReg: ' + ${sourceList.pageReg}"></li>
+        <li class="list-group-item" th:text="'timeReg: ' + ${sourceList.timeReg}"></li>
+        <li class="list-group-item" th:text="'pageStartNum: ' + ${sourceList.pageStartNum}"></li>
+        <li class="list-group-item" th:text="'pageLastNum: ' + ${sourceList.pageLastNum}"></li>
+        <li class="list-group-item" th:text="'monitor: ' + ${sourceList.monitor}"></li>
+        <li class="list-group-item" th:text="'morepage: ' + ${sourceList.morePage}"></li>
+
+    </ul>
+
+    <h4>
+        <span class="glyphicon glyphicon-saved"></span>
+        Insert into MySQL successfully!
+    </h4>
+
+    <a href="/insertSourceList"><button type="button" class="btn btn-primary">Return to home</button></a>
+    <!--<a href="/all"><button type="button" class="btn btn-warning">See Records</button></a>-->
+</div>
+</body>
+
+</html>

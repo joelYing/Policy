@@ -25,8 +25,16 @@ public class PolicyServiceImpl implements PolicyService {
     }
 
     @Override
-    public int insertSourceList(int sourceId, String url, String tag, String header, String regular, int monitor) {
-        return policyMapper.insertSourceList(sourceId, url, tag, header, regular, monitor);
+    public int insertSourceList(int sourceId, String url, String tag, int useTool, String header,
+                                String regular, String titleReg, String contentReg, String pageReg,
+                                String timeReg, int pageStartNum, int pageLastNum, int monitor, int morePage) {
+        return policyMapper.insertSourceList(sourceId, url, tag, useTool, header, regular, titleReg,
+                 contentReg, pageReg, timeReg, pageStartNum, pageLastNum, monitor, morePage);
+    }
+
+    @Override
+    public int insertSource(String domain, String name, int country, String province, String city) {
+        return policyMapper.insertSource(domain, name, country, province, city);
     }
 
 }

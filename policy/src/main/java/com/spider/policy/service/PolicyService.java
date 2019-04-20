@@ -14,5 +14,9 @@ import java.util.List;
 public interface PolicyService {
     List<Policy> getAllPolicy(String title, String sourceName, String rank);
 
-    int insertSourceList(int sourceId, String url, String tag, String header, String regular, int monitor);
+    int insertSourceList(int sourceId, String url, String tag, int useTool, String header,
+                         String regular, String titleReg, String contentReg, String pageReg,
+                         String timeReg, int pageStartNum, int pageLastNum, int monitor, int morePage);
+
+    int insertSource(String domain, String name, int country, String province, String city);
 }

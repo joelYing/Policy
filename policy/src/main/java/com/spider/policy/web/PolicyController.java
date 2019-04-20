@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -20,36 +21,42 @@ import java.util.List;
  * @Date 2019/2/1 15:32
  **/
 
-//@RestController
 @Controller
 @RequestMapping("/")
 public class PolicyController {
     @Autowired
     private PolicyMapper policyMapper;
 
-//    @GetMapping("/index")
-//    public String indexForm(Model model){
-//        model.addAttribute("postField", new PostField());
-//        return "indexform";
-//    }
-//
-//    @PostMapping("/index")
-//    public String indexSubmit(Model model, @ModelAttribute PostField postField){
-//        model.addAttribute(postField);
-//        return "indexresult";
-//    }
+    @GetMapping("/insertSource")
+    public String insertSource(Model model) {
+        model.addAttribute("source", new Source());
+        return "insertSource";
+    }
 
-    @GetMapping("/index")
-    public ModelAndView index(ModelAndView modelAndView, HttpServletResponse response){
-        PostField postField = new PostField();
-        postField.setPolicyTitle("");
-        postField.setPolicySource("");
-        postField.setRank("desc");
+    @PostMapping("/insertSource")
+    public String insertSourceSubmit(Model model, @ModelAttribute Source source) {
+        policyMapper.insertSource(source.getDomain(), source.getName(), source.getCountry(), source.getProvince(),
+                source.getCity());
 
-        modelAndView.addObject("postField", postField);
-        modelAndView.addObject("response", response);
-        modelAndView.setViewName("index");
-        return modelAndView;
+        model.addAttribute("source", source);
+        return "result";
+    }
+
+    @GetMapping("/insertSourceList")
+    public String insertSourceList(Model model) {
+        model.addAttribute("sourceList", new SourceList());
+        return "insertSourceList";
+    }
+
+    @PostMapping("/insertSourceList")
+    public String insertSourceListSubmit(Model model, @ModelAttribute SourceList sourceList) {
+        policyMapper.insertSourceList(sourceList.getSourceId(), sourceList.getUrl(), sourceList.getTag(),
+                sourceList.getUseTool(), sourceList.getHeader(), sourceList.getRegular(), sourceList.getTitleReg(),
+                sourceList.getContentReg(), sourceList.getPageReg(), sourceList.getTimeReg(), sourceList.getPageStartNum(),
+                sourceList.getPageLastNum(), sourceList.getMonitor(), sourceList.getMorePage());
+
+        model.addAttribute("sourceList", sourceList);
+        return "resultList";
     }
 
     @GetMapping("/allPolicy")
@@ -69,17 +76,6 @@ public class PolicyController {
 
 //        return policyMapper.getAllPolicies(policyTitle, policySource, timeby, rank);
         return mav;
-    }
-
-    @RequestMapping("/insertSourceList")
-    @ResponseBody
-    public int insertParam(@RequestParam(value = "sourceId") int sourceId,
-                           @RequestParam(value = "url") String url,
-                           @RequestParam(value = "tag") String tag,
-                           @RequestParam(value = "header") String header,
-                           @RequestParam(value = "regular") String regular,
-                           @RequestParam(value = "monitor") int monitor) {
-        return policyMapper.insertSourceList(sourceId, url, tag, header, regular, monitor);
     }
 
 }

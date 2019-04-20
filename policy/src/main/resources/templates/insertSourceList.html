@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div style="text-align: center;">
+    <br><br>
+    <h2 style="color:green">Form</h2>
+    <br><br>
+
+    <form class="form-horizontal" role="form" action="#" th:action="@{/insertSourceList}" th:object="${sourceList}" method="post">
+
+        <div class="form-group" style="width:300px">
+            <label for="sourceId" class="col-sm-2 control-label">SourceId</label>
+            <div class="col-sm-10">
+                <input type="text"  th:field="*{sourceId}" class="form-control" id="sourceId" placeholder="Enter sourceId">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="url" class="col-sm-2 control-label">Url</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{url}" class="form-control" id="url" placeholder="Enter url">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="tag" class="col-sm-2 control-label">Tag</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{tag}" class="form-control" id="tag" placeholder="Enter tag">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="useTool" class="col-sm-2 control-label">UseTool</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{useTool}" class="form-control" id="useTool" placeholder="Enter useTool">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="header" class="col-sm-2 control-label">Header</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{header}" class="form-control" id="header" placeholder="Enter header">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="regular" class="col-sm-2 control-label">regular</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{regular}" class="form-control" id="regular" placeholder="Enter regular">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="titleReg" class="col-sm-2 control-label">titleReg</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{titleReg}" class="form-control" id="titleReg" placeholder="Enter titleReg">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="contentReg" class="col-sm-2 control-label">contentReg</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{contentReg}" class="form-control" id="contentReg" placeholder="Enter contentReg">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="pageReg" class="col-sm-2 control-label">pageReg</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{pageReg}" class="form-control" id="pageReg" placeholder="Enter pageReg">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="timeReg" class="col-sm-2 control-label">timeReg</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{timeReg}" class="form-control" id="timeReg" placeholder="Enter timeReg">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="pageStartNum" class="col-sm-2 control-label">pageStartNum</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{pageStartNum}" class="form-control" id="pageStartNum" placeholder="Enter pageStartNum">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="pageLastNum" class="col-sm-2 control-label">pageLastNum</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{pageLastNum}" class="form-control" id="pageLastNum" placeholder="Enter pageLastNum">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="monitor" class="col-sm-2 control-label">monitor</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{monitor}" class="form-control" id="monitor" placeholder="Enter monitor">
+            </div>
+        </div>
+
+        <div class="form-group" style="width:300px">
+            <label for="morePage" class="col-sm-2 control-label">Header</label>
+            <div class="col-sm-10">
+                <input type="text" th:field="*{morePage}" class="form-control" id="morePage" placeholder="Enter morePage">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+                <input type="reset" class="btn btn-warning" value="Reset" />
+            </div>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>

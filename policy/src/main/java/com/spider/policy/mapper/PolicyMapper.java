@@ -2,6 +2,7 @@ package com.spider.policy.mapper;
 
 import com.spider.policy.entity.*;
 import org.apache.ibatis.annotations.*;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  **/
 
 @Repository
-public interface PolicyMapper {
+public interface PolicyMapper extends CrudRepository<SourceList, Long> {
     /**
      * @return 查询全部视频信息的数据
      */
@@ -38,11 +39,23 @@ public interface PolicyMapper {
                                 @Param("sourceName") String sourceName,
                                 @Param("rank") String rank);
 
-    @Insert("insert into source_list(source_id, url, tag, header, regular, monitor) values(#{sourceId}, " +
-            "#{url}, #{tag}, #{header}, #{regular}, #{monitor})")
+    @Insert("insert into source_list(source_id, url, tag, use_tool, header, regular, " +
+            "title_reg, content_reg, page_reg, time_reg, page_startnum, page_lastnum, monitor, morePage) " +
+            "values(#{sourceId}, #{url}, #{tag}, #{useTool}, #{header}, #{regular}, " +
+            "#{titleReg}, #{contentReg}, #{pageReg}, #{timeReg}, #{pageStartNum}, #{pageLastNum}, " +
+            "#{monitor}, #{morePage})")
     int insertSourceList(@Param("sourceId") int sourceId, @Param("url") String url,
-                    @Param("tag") String tag, @Param("header") String header,
-                    @Param("regular") String regular, @Param("monitor") int monitor);
+                         @Param("tag") String tag, @Param("useTool") int useTool,
+                         @Param("header") String header, @Param("regular") String regular,
+                         @Param("titleReg") String titleReg, @Param("contentReg") String contentReg,
+                         @Param("pageReg") String pageReg, @Param("timeReg") String timeReg,
+                         @Param("pageStartNum") int pageStartNum, @Param("pageLastNum") int pageLastNum,
+                         @Param("monitor") int monitor, @Param("morePage") int morePage);
 
-
+    @Insert("insert into source(domain, name, country, province, city) " +
+            "values(#{domain}, #{name}, #{country}, #{province}, #{city})")
+    int insertSource(@Param("domain") String domain, @Param("name") String name,
+                         @Param("country") int country, @Param("province") String province,
+                         @Param("city") String city);
 }
+

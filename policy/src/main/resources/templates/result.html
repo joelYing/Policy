@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div style="text-align: center;">
+    <br><br>
+    <h2 style="color:green">Result</h2>
+    <br><br>
+
+    <ul class="list-group" style="width:300px">
+        <li class="list-group-item" th:text="'domain: ' + ${source.domain}"></li>
+        <li class="list-group-item" th:text="'name: ' + ${source.name}"></li>
+        <li class="list-group-item" th:text="'country: ' + ${source.country}"></li>
+        <li class="list-group-item" th:text="'province: ' + ${source.province}"></li>
+        <li class="list-group-item" th:text="'city: ' + ${source.city}"></li>
+    </ul>
+
+    <h4>
+        <span class="glyphicon glyphicon-saved"></span>
+        Insert into MySQL successfully!
+    </h4>
+
+    <a href="/insertSource"><button type="button" class="btn btn-primary">Return to home</button></a>
+    <!--<a href="/all"><button type="button" class="btn btn-warning">See Records</button></a>-->
+</div>
+</body>
+
+</html>
