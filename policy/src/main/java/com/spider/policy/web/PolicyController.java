@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.spider.policy.entity.*;
 import com.spider.policy.mapper.PolicyMapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -61,6 +62,13 @@ public class PolicyController {
         return "resultList";
     }
 
+    @RequestMapping("/preview")
+    public String preview(@Param("url") String url, Model model) {
+        Policy policy = policyMapper.getPolicy(url);
+        model.addAttribute("policy", policy);
+        return "preview";
+    }
+
     @GetMapping("/queryPolicy")
     public String mulConditions(Model model) {
         model.addAttribute("postField", new PostField());
@@ -70,12 +78,10 @@ public class PolicyController {
     private PostField postField = null;
 
     @RequestMapping("/allPolicy")
-    public String mulConditions(Model model, @ModelAttribute PostField field,HttpServletRequest request) {
+    public String mulConditions(Model model, @ModelAttribute PostField field, HttpServletRequest request) {
         if (field.getRank()!=null){
             postField = field;
         }
-
-
         String pageNo = request.getQueryString();
         if (pageNo==null){
             pageNo = "page=1";

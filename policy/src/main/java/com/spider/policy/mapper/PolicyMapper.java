@@ -15,7 +15,7 @@ import java.util.List;
  **/
 
 @Repository
-public interface PolicyMapper extends CrudRepository<SourceList, Long> {
+public interface PolicyMapper{
     /**
      * @return 查询全部视频信息的数据
      */
@@ -39,6 +39,22 @@ public interface PolicyMapper extends CrudRepository<SourceList, Long> {
                                 @Param("sourceName") String sourceName,
                                 @Param("rank") String rank);
 
+    @Select("select * from policies where url=#{url}")
+    @Results({
+            @Result(property = "id", column = "id"),
+            @Result(property = "sourceId", column = "source_id"),
+            @Result(property = "sourceName", column = "source_name"),
+            @Result(property = "country", column = "country"),
+            @Result(property = "province", column = "province"),
+            @Result(property = "city", column = "city"),
+            @Result(property = "tag", column = "tag"),
+            @Result(property = "url", column = "url"),
+            @Result(property = "title", column = "title"),
+            @Result(property = "content", column = "content"),
+            @Result(property = "published", column = "published"),
+    })
+    Policy getPolicy(@Param("url") String url);
+
     @Insert("insert into source_list(source_id, url, tag, use_tool, header, regular, " +
             "title_reg, content_reg, page_reg, time_reg, page_startnum, page_lastnum, monitor, morePage) " +
             "values(#{sourceId}, #{url}, #{tag}, #{useTool}, #{header}, #{regular}, " +
@@ -57,5 +73,7 @@ public interface PolicyMapper extends CrudRepository<SourceList, Long> {
     int insertSource(@Param("domain") String domain, @Param("name") String name,
                          @Param("country") int country, @Param("province") String province,
                          @Param("city") String city);
+
+
 }
 

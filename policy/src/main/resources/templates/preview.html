@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>learn Resources</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<link rel="stylesheet" th:href="@{../css/bootstrap.css}" />
+<script type="text/javascript" th:src="@{../js/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+
+<body>
+<div class="container">
+    <h1>查询结果</h1>
+    <table border="1" align="center">
+        <ul>
+            <li th:text="'序号 : '+${policy.getId()}"></li>
+            <li th:text="'来源 : '+${policy.getSourceName()}"></li>
+            <li th:text="'标签 : '+${policy.getTag()}"></li>
+            <li><a th:text="'链接 : '+${policy.getTitle()}" th:href="${policy.getUrl()}" target="_blank"></a></li>
+            <li th:text="'发布时间 : '+${policy.getPublished()}"></li>
+            <li th:text="'正文 : '+${policy.getContent()}"></li>
+        </ul>
+    </table>
+</div>
+</body>
+</html>

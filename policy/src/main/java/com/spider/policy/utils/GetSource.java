@@ -88,6 +88,7 @@ public class GetSource {
         }
         if (sourceList.getMorePage() == 1) {
             page = PageExtract.url(url.replace("%s", String.valueOf(sourceList.getPageStartNum())));
+            // pageStartNum 在这对于多页的爬取中必须要有，优先找带有正则的页数表达式，若没有页数正则，则找到指定输入的总页数
             if (!"".equals(sourceList.getPageReg())) {
                 Matcher matcher = Pattern.compile(sourceList.getPageReg()).matcher(page.getHtml());
                 while (matcher.find()) {
@@ -241,6 +242,7 @@ public class GetSource {
             if (links != null) {
                 for (String link : links) {
                     Policy policy = new Policy();
+                    // 提取链接在这两种之中，需要再加上正则匹配
                     if (UrlUtils.guessArticleUrl(link, null) || UrlUtils.guessListUrl(link, null)) {
 
                         String regular = link;
