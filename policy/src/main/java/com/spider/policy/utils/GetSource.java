@@ -66,8 +66,8 @@ public class GetSource {
 ////            break;
 //        }
         for (int i = 0;i < sourceListArrayList.size();i++) {
-            // error 21 22 23 以及use_tool 等于0的
-            if (i > 30) {
+            // error 21 22 23 以及use_tool 等于0的 ;19需要cookie
+            if (i == 54) {
                 System.out.println(sourceListArrayList.get(i).getUrl());
                 if (sourceListArrayList.get(i).getUseTool() == 1) {
                     getByTools(sourceListArrayList.get(i));
@@ -113,94 +113,7 @@ public class GetSource {
     }
 
     public static void getByGenerals(SourceList sourceList) {
-//        String realHtml;
-//        if (sourceList.getMorePage() == 0) {
-//            if (!"".equals(sourceList.getHeader())) {
-//                String headers = sourceList.getHeader();
-//                String hk = headers.split(":")[0];
-//                String hv = headers.split(":")[1];
 //
-//                realHtml = GetHtml.getHtml(sourceList.getUrl(), hk, hv);
-//                Matcher matcher = Pattern.compile(sourceList.getRegular()).matcher(realHtml);
-//
-//                while (matcher.find()) {
-//                    String policyUrl = "http://www.chinatax.gov.cn" + matcher.group(1);
-//                    System.out.println(policyUrl);
-//                    System.out.println(matcher.group(2));
-//
-//                }
-//            }
-//
-//        }
-//        if (sourceList.getMorePage() == 1) {
-//            page = PageExtract.url(String.format(url, sourceList.getPageStartNum()));
-//            if (!"".equals(sourceList.getPageReg())) {
-//                Matcher matcher = Pattern.compile(sourceList.getPageReg()).matcher(page.getHtml());
-//                while (matcher.find()) {
-//                    String totalPage = matcher.group(1);
-//                    for (int p = sourceList.getPageStartNum(); p < Integer.parseInt(totalPage); p++) {
-//                        System.out.println(p);
-//                        Page pageMore = PageExtract.url(String.format(url, p));
-//                        pageTool(sourceList, pageMore);
-//                    }
-//                }
-//            } else if (sourceList.getPageLastNum() != 0) {
-//                for (int p = sourceList.getPageStartNum(); p < sourceList.getPageLastNum(); p++) {
-//                    System.out.println(p);
-//                    Page pageMore = PageExtract.url(String.format(url, p));
-//                    pageTool(sourceList, pageMore);
-//                }
-//            } else {
-//                System.out.println("error");
-//            }
-//
-//        }
-//
-//        String content = "<li class=\"sv_texth3\" id=\"tax_content\">([\\s\\S]*?)</li>";
-//        String time = "税务总局[\\s\\S]*?(\\d+)年(\\d+)月(\\d+)日";
-//        for(int i = 1; i <= pages; i++) {
-//            String realHtml;
-//            if(i == 1) {
-//                realHtml = GetHtml.getHtml5(sourceUrl + "n810341/n810755/index.html");
-//            } else {
-//                realHtml = GetHtml.getHtml5(sourceUrl + String.format("n810341/n810755/index_3849171_%s.html", i - 1));
-//            }
-//            Matcher matcher = Pattern.compile(sourceRule).matcher(realHtml);
-//
-//            while (matcher.find()) {
-//                String policyUrl = "http://www.chinatax.gov.cn" + matcher.group(1);
-//                System.out.println(policyUrl);
-//                System.out.println(matcher.group(2));
-//
-//                policy.setPolicyUrl(policyUrl);
-//                policy.setPolicyTitle(matcher.group(2).replaceAll("&.*?;", ""));
-//                policy.setPolicySource(sourceName);
-//                policy.setPolicyKeywords("");
-//
-//                policy.setPolicyContent("");
-//                try {
-//                    String policyHtml = GetHtml.getHtml5(policyUrl);
-//                    Matcher matcher1 = Pattern.compile(time).matcher(policyHtml);
-//                    while (matcher1.find()) {
-//                        String times = matcher1.group(1) + "-" + matcher1.group(2) + "-" + matcher1.group(3);
-//                        policy.setPublishTime(times.trim());
-//                    }
-//                    Matcher matcher2 = Pattern.compile(content).matcher(policyHtml);
-//                    while (matcher2.find()) {
-//                        String text = matcher2.group(1).replaceAll("<.*?>|&.*?;|\\s|<!--[\\s\\S]*?-->", "");
-//                        policy.setPolicyContent(text.trim());
-//                    }
-//                } catch (Exception e) {
-//                    System.out.println("404");
-//                }
-//                InfoSave.insert(policy);
-//            }
-//            try {
-//                TimeUnit.SECONDS.sleep(2);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
     }
 
     public static void parseHtml(SourceList sourceList, String realHtml, String realLink, Policy policy, Source source) {
