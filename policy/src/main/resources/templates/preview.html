@@ -17,7 +17,8 @@
             <li th:text="'来源 : '+${policy.getSourceName()}"></li>
             <li th:text="'标签 : '+${policy.getTag()}"></li>
             <li><a th:text="'链接 : '+${policy.getTitle()}" th:href="${policy.getUrl()}" target="_blank"></a></li>
-            <li th:text="'发布时间 : '+${policy.getPublished().toString().replace('00:00:00.0', '')}"></li>
+            <li th:if="${policy.getPublished()}" th:text="'发布时间 : '+${policy.getPublished().toString().replace('00:00:00.0', '')}"></li>
+            <li th:if="!${policy.getPublished()}" th:text="'发布时间 : '"></li>
             <li th:text="'正文 : '+${policy.getContent()}"></li>
         </ul>
     </table>
