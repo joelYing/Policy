@@ -2,9 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1503c8d9-7470-40a5-9162-9ab8681eda2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_edu_hfut_dmic_webcollector_WebCollector_2_73_alpha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sleepycat_je_5_0_73.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_14_v20181114.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/policy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/policy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/policy.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -244,15 +290,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="1-SNAPSHOT" value="1" />
           <entry key="class" value="2" />
           <entry key="css" value="1" />
           <entry key="html" value="9" />
-          <entry key="java" value="46" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="47" />
           <entry key="md" value="1" />
           <entry key="properties" value="2" />
           <entry key="sql" value="1" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -260,12 +308,14 @@
           <entry key="CLASS" value="2" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="9" />
-          <entry key="JAVA" value="46" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="47" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="2" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -273,7 +323,7 @@
           <entry key="class" value="5" />
           <entry key="css" value="3" />
           <entry key="html" value="311" />
-          <entry key="java" value="3510" />
+          <entry key="java" value="3511" />
           <entry key="md" value="9" />
           <entry key="properties" value="12" />
           <entry key="txt" value="42" />
@@ -285,7 +335,7 @@
           <entry key="CLASS" value="5" />
           <entry key="CSS" value="3" />
           <entry key="HTML" value="311" />
-          <entry key="JAVA" value="3510" />
+          <entry key="JAVA" value="3511" />
           <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="42" />
           <entry key="Properties" value="12" />
@@ -371,8 +421,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state>
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,20 +430,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/policy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/preview.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="-70">
+              <caret line="268" column="7" selection-start-line="268" selection-start-column="7" selection-end-line="268" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -401,8 +445,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+            <state relative-caret-position="700">
+              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-321">
+              <caret line="145" column="62" lean-forward="true" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -410,10 +463,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="480">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
-                <element signature="e#817#818#0" expanded="true" />
+                <element signature="imports" expanded="true" />
                 <element signature="e#851#852#0" expanded="true" />
               </folding>
             </state>
@@ -423,8 +476,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="380">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -432,8 +485,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="288">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -442,7 +495,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/TestPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+              <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -462,7 +515,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>https://www.360kan.com/m/faXlaRH2Q0HASB.html</find>
       <find>https://www.360kan.com/tv/QbpsaqDaRG0tOX.html</find>
       <find>https://www.360kan.com/m/fanlZUf8R0b6SB.html</find>
       <find>getIdList</find>
@@ -492,6 +544,7 @@
       <find>500</find>
       <find>.table-</find>
       <find>.table</find>
+      <find>slf4j</find>
     </findStrings>
     <replaceStrings>
       <replace>500</replace>
@@ -529,15 +582,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/xxx/CategoryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/policy.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/indexresult.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/PolicyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/service/impl/PolicyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/TestPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/InfoSave.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java" />
@@ -551,11 +601,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/DbConnect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/utils/End.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/TestPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/mapper/PolicyMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/policy.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/preview.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -747,7 +800,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555905536970" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555911228287" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
@@ -796,7 +849,7 @@
     </option>
     <option name="contentProportion" value="0.095993325" />
   </component>
-  <component name="RunManager" selected="Application.NewPolicyTest">
+  <component name="RunManager" selected="Spring Boot.PolicyApplication">
     <configuration name="GetHtml" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spider.policy.bases.GetHtml" />
       <module name="policy" />
@@ -979,11 +1032,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555904570995</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="4.22">
+      <created>1555905611733</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555905611733</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="859735000" />
+    <option name="totallyTimeSpent" value="863195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -998,7 +1058,7 @@
     <frame x="-8" y="-8" width="2549" height="1401" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17115307" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17115307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1008,7 +1068,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995905" weight="0.45096463" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995905" weight="0.36093247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33162394" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1016,12 +1076,12 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32820514" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32955465" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004095" side_tool="true" weight="0.36068377" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32649574" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32636657" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32820514" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32820514" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955465" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.4381029" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.5442122" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1097,14 +1157,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/threadtool/CircleTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/suosi-inc/commons-spider/0.15.0/commons-spider-0.15.0.jar!/com/github/suosi/commons/spider/App.class" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/policy.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1166,23 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="282" column="69" lean-forward="true" selection-start-line="282" selection-start-column="69" selection-end-line="282" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,24 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding>
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/config/PageHelperConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1360,27 +1377,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/TestPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1394,20 +1394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/policy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="583">
+          <caret line="47" column="79" lean-forward="true" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -1418,10 +1408,227 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/policy.html">
+    <entry file="file://$PROJECT_DIR$/policy.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="-780" />
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.spider:policy:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.spider:policy:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.spider:policy:0.0.1-SNAPSHOT</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/org.springframework.data:spring-data-rest-core:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/org.springframework.data:spring-data-rest-core:jar:3.1.4.RELEASE/org.springframework.hateoas:spring-hateoas:jar:0.25.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/org.springframework.data:spring-data-rest-core:jar:3.1.4.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/org.springframework.data:spring-data-rest-core:jar:3.1.4.RELEASE/org.springframework.plugin:spring-plugin-core:jar:1.2.0.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/org.springframework.data:spring-data-rest-core:jar:3.1.4.RELEASE/org.atteo:evo-inflector:jar:1.2.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.8/com.fasterxml.jackson.core:jackson-core:jar:2.9.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-data-rest:jar:2.1.2.RELEASE/org.springframework.data:spring-data-rest-webmvc:jar:3.1.4.RELEASE/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.2.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.2.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.2.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.2.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.2.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.2.RELEASE/org.yaml:snakeyaml:jar:1.23</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/com.zaxxer:HikariCP:jar:3.2.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework:spring-jdbc:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework:spring-jdbc:jar:5.1.4.RELEASE/org.springframework:spring-beans:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.2.RELEASE/org.springframework:spring-jdbc:jar:5.1.4.RELEASE/org.springframework:spring-tx:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.1.2.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.1.2.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.11.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.1.2.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.11.RELEASE/org.attoparser:attoparser:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.1.2.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.11.RELEASE/org.unbescape:unbescape:jar:1.1.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.1.2.RELEASE/org.thymeleaf.extras:thymeleaf-extras-java8time:jar:3.0.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.2.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.2.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.2.RELEASE/com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.2.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.2.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.2.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.14.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.14.Final/javax.validation:validation-api:jar:2.0.1.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.14.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.14.Final/com.fasterxml:classmate:jar:1.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework:spring-web:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework:spring-webmvc:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework:spring-webmvc:jar:5.1.4.RELEASE/org.springframework:spring-aop:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework:spring-webmvc:jar:5.1.4.RELEASE/org.springframework:spring-context:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.2.RELEASE/org.springframework:spring-webmvc:jar:5.1.4.RELEASE/org.springframework:spring-expression:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/com.sun.xml.messaging.saaj:saaj-impl:jar:1.5.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/com.sun.xml.messaging.saaj:saaj-impl:jar:1.5.0/javax.xml.soap:javax.xml.soap-api:jar:1.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/com.sun.xml.messaging.saaj:saaj-impl:jar:1.5.0/org.jvnet.mimepull:mimepull:jar:1.9.10</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/com.sun.xml.messaging.saaj:saaj-impl:jar:1.5.0/org.jvnet.staxex:stax-ex:jar:1.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/javax.xml.ws:jaxws-api:jar:2.3.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/javax.xml.ws:jaxws-api:jar:2.3.1/javax.xml.bind:jaxb-api:jar:2.3.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/javax.xml.ws:jaxws-api:jar:2.3.1/javax.xml.bind:jaxb-api:jar:2.3.1/javax.activation:javax.activation-api:jar:1.2.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/org.springframework:spring-oxm:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/org.springframework.ws:spring-ws-core:jar:3.0.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/org.springframework.ws:spring-ws-core:jar:3.0.6.RELEASE/org.springframework.ws:spring-xml:jar:3.0.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web-services:jar:2.1.2.RELEASE/org.springframework.ws:spring-ws-core:jar:3.0.6.RELEASE/commons-io:commons-io:jar:2.5</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.0</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.0/org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:2.0.0</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.0/org.mybatis:mybatis:jar:3.5.0</node>
+            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.0/org.mybatis:mybatis-spring:jar:2.0.0</node>
+            <node x="" y="">org.springframework.data:spring-data-rest-hal-browser:jar:3.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-rest-hal-browser:jar:3.1.4.RELEASE/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.1.2.RELEASE</node>
+            <node x="" y="">mysql:mysql-connector-java:jar:5.1.47</node>
+            <node x="" y="">org.projectlombok:lombok:jar:1.18.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-test:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.1.2.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/junit:junit:jar:4.12</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.assertj:assertj-core:jar:3.11.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.mockito:mockito-core:jar:2.23.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.mockito:mockito-core:jar:2.23.4/net.bytebuddy:byte-buddy:jar:1.9.7</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.mockito:mockito-core:jar:2.23.4/net.bytebuddy:byte-buddy-agent:jar:1.9.7</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.mockito:mockito-core:jar:2.23.4/org.objenesis:objenesis:jar:2.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.hamcrest:hamcrest-library:jar:1.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.springframework:spring-core:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.springframework:spring-core:jar:5.1.4.RELEASE/org.springframework:spring-jcl:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.springframework:spring-test:jar:5.1.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.2.RELEASE/org.xmlunit:xmlunit-core:jar:2.6.2</node>
+            <node x="" y="">org.springframework.restdocs:spring-restdocs-mockmvc:jar:2.0.3.RELEASE</node>
+            <node x="" y="">org.springframework.restdocs:spring-restdocs-mockmvc:jar:2.0.3.RELEASE/javax.servlet:javax.servlet-api:jar:4.0.1</node>
+            <node x="" y="">org.springframework.restdocs:spring-restdocs-mockmvc:jar:2.0.3.RELEASE/org.springframework.restdocs:spring-restdocs-core:jar:2.0.3.RELEASE</node>
+            <node x="" y="">com.squareup.okhttp3:okhttp:jar:3.12.1</node>
+            <node x="" y="">com.squareup.okhttp3:okhttp:jar:3.12.1/com.squareup.okio:okio:jar:1.15.0</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.6</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.6/org.apache.httpcomponents:httpcore:jar:4.4.10</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.5.6/commons-codec:commons-codec:jar:1.11</node>
+            <node x="" y="">org.jsoup:jsoup:jar:1.10.2</node>
+            <node x="" y="">net.sourceforge.htmlcleaner:htmlcleaner:jar:2.9</node>
+            <node x="" y="">net.sourceforge.htmlcleaner:htmlcleaner:jar:2.9/org.jdom:jdom2:jar:2.0.6</node>
+            <node x="" y="">com.alibaba:druid:jar:1.1.13</node>
+            <node x="" y="">com.alibaba:fastjson:jar:1.2.56</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/com.google.guava:failureaccess:jar:1.0.1</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/com.google.code.findbugs:jsr305:jar:3.0.2</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/org.checkerframework:checker-qual:jar:2.5.2</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/com.google.errorprone:error_prone_annotations:jar:2.2.0</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/com.google.j2objc:j2objc-annotations:jar:1.1</node>
+            <node x="" y="">com.google.guava:guava:jar:27.0.1-jre/org.codehaus.mojo:animal-sniffer-annotations:jar:1.17</node>
+            <node x="" y="">com.squareup.okhttp3:okhttp-urlconnection:jar:3.14.0</node>
+            <node x="" y="">com.squareup.okhttp3:okhttp-urlconnection:jar:3.14.0/com.squareup.okhttp3:okhttp:jar:3.14.0</node>
+            <node x="" y="">com.google.code.gson:gson:jar:2.8.5</node>
+            <node x="" y="">com.github.pagehelper:pagehelper:jar:4.1.6</node>
+            <node x="" y="">com.github.pagehelper:pagehelper:jar:4.1.6/com.github.jsqlparser:jsqlparser:jar:0.9.5</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/com.squareup.okhttp3:okhttp:jar:3.12.2</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/org.jsoup:jsoup:jar:1.11.3</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/com.github.suosi-inc:commons-helper:jar:0.9</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/com.github.suosi-inc:commons-helper:jar:0.9/org.apache.commons:commons-lang3:jar:3.8.1</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/com.github.suosi-inc:commons-helper:jar:0.9/commons-io:commons-io:jar:2.6</node>
+            <node x="" y="">com.github.suosi-inc:commons-spider:jar:0.15.0/com.github.suosi-inc:commons-helper:jar:0.9/com.google.guava:guava:jar:22.0</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha/org.rocksdb:rocksdbjni:jar:5.14.2</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha/com.squareup.okhttp3:okhttp:jar:3.11.0</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha/org.jsoup:jsoup:jar:1.10.2</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha/com.sleepycat:je:jar:5.0.73</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha/org.slf4j:slf4j-log4j12:jar:1.7.25</node>
+            <node x="" y="">cn.edu.hfut.dmic.webcollector:WebCollector:jar:2.73-alpha/org.slf4j:slf4j-log4j12:jar:1.7.25/log4j:log4j:jar:1.2.17</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="887.5" y="2170.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/web/PolicyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/bases/GetHtml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="268" column="7" selection-start-line="268" selection-start-column="7" selection-end-line="268" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/QuartzService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/TestPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/utils/GetSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/NewPolicyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spider/policy/PolicyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-321">
+          <caret line="145" column="62" lean-forward="true" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
         </state>
       </provider>
     </entry>

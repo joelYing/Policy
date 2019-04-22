@@ -130,36 +130,36 @@
             <artifactId>pagehelper</artifactId>
             <version>4.1.6</version>
         </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.4.0</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>htmlunit-driver</artifactId>
-            <version>2.27</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>net.sourceforge.htmlunit</groupId>
-            <artifactId>htmlunit</artifactId>
-            <version>2.18</version>
-            <optional>true</optional>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.seleniumhq.selenium</groupId>-->
+            <!--<artifactId>selenium-java</artifactId>-->
+            <!--<version>3.4.0</version>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.seleniumhq.selenium</groupId>-->
+            <!--<artifactId>htmlunit-driver</artifactId>-->
+            <!--<version>2.27</version>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>net.sourceforge.htmlunit</groupId>-->
+            <!--<artifactId>htmlunit</artifactId>-->
+            <!--<version>2.18</version>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.github.suosi-inc</groupId>
             <artifactId>commons-spider</artifactId>
             <version>0.15.0</version>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>cn.edu.hfut.dmic.webcollector</groupId>
-            <artifactId>WebCollector</artifactId>
-            <version>2.73-alpha</version>
-            <optional>true</optional>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>cn.edu.hfut.dmic.webcollector</groupId>-->
+            <!--<artifactId>WebCollector</artifactId>-->
+            <!--<version>2.73-alpha</version>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
     </dependencies>
 
     <repositories>

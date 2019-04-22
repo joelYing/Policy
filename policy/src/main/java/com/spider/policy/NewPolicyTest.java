@@ -23,6 +23,6 @@ public class NewPolicyTest {
     }
 
     public static void main(String[] args) {
-        getSourceLists(79);
+        getSourceLists(78);
     }
 }
