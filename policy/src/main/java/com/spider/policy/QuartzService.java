@@ -19,7 +19,7 @@ public class QuartzService {
      * 每天早上10:30
      */
     @Scheduled(cron = "0 30 10 1/1 * ?")
-    public void updateCrawl1() throws InterruptedException {
+    public void updateCrawl1() {
         GetSource.getMonitorLists();
         System.out.println("now time:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
     }
@@ -28,7 +28,7 @@ public class QuartzService {
      *  每周五早8点
      */
     @Scheduled(cron = "0 0 8 ? * FRI")
-    public void updateCrawl2() throws InterruptedException {
+    public void updateCrawl2() {
         GetSource.getSourceLists();
         System.out.println("now time:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
     }

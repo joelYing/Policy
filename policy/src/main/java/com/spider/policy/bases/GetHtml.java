@@ -279,10 +279,6 @@ public class GetHtml {
         Request request = new Request.Builder()
                 .url(url)
                 .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36")
-//                .header("Host", "www.chinatax.gov.cn")
-//                .header("Pragma", "no-cache")
-//                .header("Referer", "http://www.chinatax.gov.cn/n810341/n810755/c4195742/content.html")
-//                .header("Upgrade-Insecure-Requests", "1")
                 .header(hk,hv)
                 .build();
 
