@@ -29,11 +29,11 @@ public class DbConnect {
             if(dataSource==null){
                 dataSource=new DruidDataSource();
                 //设置连接参数
-//                dataSource.setUrl("jdbc:mysql://localhost:3306/360kan?useUnicode=true&characterEncoding=UTF8&useSSL=false")
-                dataSource.setUrl("jdbc:mysql://localhost:3306/policy?useUnicode=true&characterEncoding=UTF8&useSSL=false");
+                //dataSource.setUrl("jdbc:mysql://localhost:3306/360kan?useUnicode=true&characterEncoding=UTF8&useSSL=false")
+                dataSource.setUrl("jdbc:mysql://192.168.101.160:3306/policy?useUnicode=true&characterEncoding=UTF8&useSSL=false");
                 dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-                dataSource.setUsername("root");
-                dataSource.setPassword("12138");
+                dataSource.setUsername("suosi");
+                dataSource.setPassword("Mysql123.com");
                 //配置初始化大小、最小、最大
                 dataSource.setInitialSize(10);
                 dataSource.setMinIdle(10);
@@ -42,13 +42,13 @@ public class DbConnect {
                 dataSource.setRemoveAbandoned(true);
                 dataSource.setRemoveAbandonedTimeout(30);
                 //配置获取连接等待超时的时间
-//                dataSource.setMaxWait(20000);
+                //dataSource.setMaxWait(20000);
                 //配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
-//                dataSource.setTimeBetweenEvictionRunsMillis(20000)
+                //dataSource.setTimeBetweenEvictionRunsMillis(20000)
                 // 防止过期
                 dataSource.setValidationQuery("SELECT 'x'");
                 dataSource.setTestWhileIdle(true);
-//                dataSource.setTestOnBorrow(true)
+                //dataSource.setTestOnBorrow(true)
             }
         }catch(Exception e){
             throw e;

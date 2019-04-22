@@ -223,4 +223,40 @@ public class InfoSave {
         return sourceListArrayList;
     }
 
+    public static SourceList selectAPolicyList(int id) {
+        SourceList sourceList = new SourceList();
+        try {
+            Connection connection = dbConnect.getConnect();
+            PreparedStatement pst;
+
+            String querySql = "select `source_id`, `url`, `tag`, `use_tool`, `header`, `regular`, `title_reg`, `content_reg`, " +
+                    "`page_reg`, `time_reg`, `page_startnum`, `page_lastnum`, `monitor`, `morepage` from `source_list`" +
+                    "where id=?";
+            pst = connection.prepareStatement(querySql);
+            pst.setInt(1, id);
+            ResultSet result = pst.executeQuery();
+            while (result.next()) {
+                sourceList.setSourceId(result.getInt(1));
+                sourceList.setUrl(result.getString(2));
+                sourceList.setTag(result.getString(3));
+                sourceList.setUseTool(result.getInt(4));
+                sourceList.setHeader(result.getString(5));
+                sourceList.setRegular(result.getString(6));
+                sourceList.setTitleReg(result.getString(7));
+                sourceList.setContentReg(result.getString(8));
+                sourceList.setPageReg(result.getString(9));
+                sourceList.setTimeReg(result.getString(10));
+                sourceList.setPageStartNum(result.getInt(11));
+                sourceList.setPageLastNum(result.getInt(12));
+                sourceList.setMonitor(result.getInt(13));
+                sourceList.setMorePage(result.getInt(14));
+            }
+            pst.close();
+            connection.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return sourceList;
+    }
+
 }

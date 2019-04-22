@@ -2,9 +2,7 @@ package com.spider.policy.mapper;
 
 import com.spider.policy.entity.*;
 import org.apache.ibatis.annotations.*;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
 
 

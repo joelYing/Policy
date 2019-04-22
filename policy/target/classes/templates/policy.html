@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>learn Resources</title>
+    <title>Policy</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <link rel="stylesheet" th:href="@{../css/bootstrap.css}" />
@@ -27,7 +27,7 @@
             <td th:text="${p.getTag()}"></td>
             <td><a th:text="${p.getTitle()}" th:href="${p.getUrl()}" target="_blank"></a></td>
             <td><a th:href="@{'/preview?url='+${p.getUrl()}}">预览</a></td>
-            <td th:text="${p.getPublished()}"></td>
+            <td th:text="${p.getPublished().toString().replace('00:00:00.0', '')}"></td>
         </tr>
 
     </table>

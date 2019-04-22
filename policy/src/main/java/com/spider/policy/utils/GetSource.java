@@ -1,22 +1,16 @@
 package com.spider.policy.utils;
 
-import cn.edu.hfut.dmic.contentextractor.ContentExtractor;
 import com.github.suosi.commons.helper.utils.Strtotime;
-import com.github.suosi.commons.spider.extract.content.webcollector.Article;
-import com.github.suosi.commons.spider.extract.content.webcollector.ContentExtract;
 import com.github.suosi.commons.spider.extract.site.PageExtract;
 import com.github.suosi.commons.spider.extract.site.meta.Page;
 import com.github.suosi.commons.spider.utils.CharsetUtils;
 import com.github.suosi.commons.spider.utils.OkHttpUtils;
 import com.github.suosi.commons.spider.utils.UrlUtils;
 import com.spider.policy.bases.GetHtml;
-import com.spider.policy.bases.GetPage;
 import com.spider.policy.entity.Policy;
 import com.spider.policy.entity.Source;
 import com.spider.policy.entity.SourceList;
 import okhttp3.Response;
-
-import java.io.IOException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -56,18 +50,9 @@ public class GetSource {
 
     public static void getSourceLists() {
         ArrayList<SourceList> sourceListArrayList = InfoSave.selectSourceList();
-//        for(SourceList sourceList : sourceListArrayList) {
-//            if (sourceList.getUseTool() == 1) {
-//                getByTools(sourceList);
-//            }
-//            if (sourceList.getUseTool() == 0) {
-//                getByGenerals(sourceList);
-//            }
-////            break;
-//        }
         for (int i = 0;i < sourceListArrayList.size();i++) {
             // error 21 22 23 以及use_tool 等于0的 ;19需要cookie
-            if (i == 54) {
+            if (i == 78) {
                 System.out.println(sourceListArrayList.get(i).getUrl());
                 if (sourceListArrayList.get(i).getUseTool() == 1) {
                     getByTools(sourceListArrayList.get(i));

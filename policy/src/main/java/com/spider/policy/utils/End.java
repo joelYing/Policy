@@ -1,10 +1,6 @@
 package com.spider.policy.utils;
 
 public class End {
-
-
-
-
 //    public static void getSourcePolicy(String sourceName, String sourceUrl, String sourceRule) {
 //        Policy policy = new Policy();
 //        if("中华人民共和国商务部".equals(sourceName)) {
@@ -340,7 +336,5 @@ public class End {
 //            }
 //        }
 //    }
-
-
 
 }
