@@ -30,10 +30,10 @@ public class DbConnect {
                 dataSource=new DruidDataSource();
                 //设置连接参数
                 //dataSource.setUrl("jdbc:mysql://localhost:3306/360kan?useUnicode=true&characterEncoding=UTF8&useSSL=false")
-                dataSource.setUrl("jdbc:mysql://192.168.101.160:3306/policy?useUnicode=true&characterEncoding=UTF8&useSSL=false");
+                dataSource.setUrl("jdbc:mysql://localhost:3306/policy?useUnicode=true&characterEncoding=UTF8&useSSL=false");
                 dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-                dataSource.setUsername("suosi");
-                dataSource.setPassword("Mysql123.com");
+                dataSource.setUsername("root");
+                dataSource.setPassword("12138");
                 //配置初始化大小、最小、最大
                 dataSource.setInitialSize(10);
                 dataSource.setMinIdle(10);
